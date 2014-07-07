@@ -111,6 +111,7 @@ MonoBehaviour:
     - gal_harajuku_a
     - player22_b
     - enemy_4
+    - fifty
     spriteTextureGUIDs:
     - 68674e1f4d92d406190fde21c0b11ffe
     - f26ebf22ac36442e380e16fbf6a96d5e
@@ -192,6 +193,7 @@ MonoBehaviour:
     - b9e3777173c4b45c8bbb13f2a872ded1
     - e7948f1b36f724361989f88245261eb8
     - f2901adf3a85f4169a9a256b4f3787b7
+    - a9a0b269e9c374d36a3034e9a52da639
     spriteTextureTimeStamps:
     - 1404390742
     - 1404390742
@@ -273,6 +275,7 @@ MonoBehaviour:
     - 1404141404
     - 1404483528
     - 1404493062
+    - 1404737407
     managedSpriteCollection: 0
     loadable: 0
     assetName: 

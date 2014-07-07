@@ -394,7 +394,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collection: {fileID: 11400000, guid: cc6ec3f2148d3428ea63ffb8222732f1, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
-  _scale: {x: 1, y: 1, z: 1}
+  _scale: {x: .5, y: .5, z: .5}
   _spriteId: 0
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []

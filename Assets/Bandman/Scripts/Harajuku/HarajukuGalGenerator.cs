@@ -7,6 +7,7 @@ public class HarajukuGalGenerator : MonoBehaviour
 {
 	public float interval;
 	public int maxGalSize;
+	public NotificationSender notificationSender;
 	private List<GameObject> myList = new List<GameObject> ();
 
 	// Use this for initialization
@@ -38,8 +39,7 @@ public class HarajukuGalGenerator : MonoBehaviour
 			int galDifference = maxGalSize - currentGalSize;
 			double addSeconds = galDifference * 9;
 			Debug.Log ("addSeconds = " + addSeconds);
-//			NotificationManager notificationManager = new NotificationManager();
-//			notificationManager.ScheduleLocalNotification(addSeconds);
+			notificationSender.ScheduleLocalNotification(addSeconds);
 		}
 	}
 

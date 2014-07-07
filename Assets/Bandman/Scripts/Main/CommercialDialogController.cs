@@ -32,6 +32,10 @@ public class CommercialDialogController : MonoBehaviour
 	{
 		Debug.Log ("OnButtonClick");
 
+		if(isDialogShowing){
+			return;
+		}
+
 		string buttonName = UIButton.current.name;
 		Debug.Log (buttonName);
 		if (buttonName == "BackButton") {
@@ -74,6 +78,7 @@ public class CommercialDialogController : MonoBehaviour
 		Debug.Log ("preparing to purchase product: " + product.productIdentifier);
 		StoreKitBinding.purchaseProduct (product.productIdentifier, 1);
 		EtceteraBinding.showBezelActivityViewWithLabel("Loading");
+		isDialogShowing = true;
 	}
 #endif
 

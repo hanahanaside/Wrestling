@@ -27,7 +27,7 @@ public class ReviewAppChecker : MonoBehaviour {
 			kyabaObject.transform.parent = anchor.transform;
 			kyabaObject.transform.position = anchor.transform.position;
 			string title = "\u30ec\u30d3\u30e5\u30fc\u3042\u308a\u304c\u3068\u3046\u3054\u3056\u3044\u307e\u3059\uff01";
-			string message = "\u30ad\u30e3\u30d0\u5b22\u3092\u8ffd\u52a0\u3057\u307e\u3057\u305f!!";
+			string message = "\u7df4\u7fd2\u751f\u3092\u8ffd\u52a0\u3057\u307e\u3057\u305f!!";
 			ReviewDialog.reviewFlag = false;
 #if UNITY_IPHONE
 			string[] buttons = {"OK"};

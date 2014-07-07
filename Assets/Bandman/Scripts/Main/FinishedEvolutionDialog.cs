@@ -4,18 +4,17 @@ using System.Collections;
 public class FinishedEvolutionDialog : AlertDialog
 {
 	private const string TITLE = "\u306b\u9032\u5316\u3057\u307e\u3057\u305f";
-	private const string MESSAGE = "\u4eca\u56de\u306e\u9032\u5316\u3092Twitter\u3067\u30b7\u30a7\u30a2\u9802\u3044\u305f\u65b9\u306b\u3001\u30d0\u30f3\u30ae\u30e3\u30eb50\u4eba\u5206\u306e\u30ad\u30e3\u30d0\u5b22\u30921\u4eba\u30d7\u30ec\u30bc\u30f3\u30c8\uff01";
+	private const string MESSAGE = "\u4eca\u56de\u306e\u9032\u5316\u3092Twitter\u3067\u30b7\u30a7\u30a2\u9802\u3044\u305f\u65b9\u306b\u3001\u7df4\u7fd2\u751f50\u4eba\u5206\u306e\u7df4\u7fd2\u751f\u30921\u4eba\u30d7\u30ec\u30bc\u30f3\u30c8!!";
 	private const string POSITIVE_BUTTON = "\u30b7\u30a7\u30a2\u3059\u308b"; // share
 	private const string NEGATIVE_BUTTON = "\u30c1\u30a7\u30ad\u3092\u898b\u308b"; //cheki
-	public GameObject chekiDialogPrefab;
 
 	public override void alertButtonClicked (string text)
 	{
 		if (text == POSITIVE_BUTTON) {
 			StartCoroutine (GameObject.Find ("ShareManager").GetComponent<ShareManager> ().showTweetComposer ());
 		} else {
-			GameObject dialog = Instantiate (chekiDialogPrefab)as GameObject;
-			GameObject.Find("MainController").GetComponent<MainController>().showDialog(dialog);
+			GameObject.Find("ChekiButton").SendMessage("OnClick");
+			Destroy(gameObject);
 		}
 	}
 
@@ -33,7 +32,6 @@ public class FinishedEvolutionDialog : AlertDialog
 		#endif
 		
 		#if UNITY_ANDROID
-
 		EtceteraAndroid.showAlert(title,MESSAGE,POSITIVE_BUTTON,NEGATIVE_BUTTON);
 		#endif
 	}

@@ -200,7 +200,7 @@ MonoBehaviour:
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
   zoomFactor: 1
   forceResolutionInEditor: 1
-  forceResolution: {x: 640, y: 960}
+  forceResolution: {x: 480, y: 800}
 --- !u!20 &1408420009
 Camera:
   m_ObjectHideFlags: 3

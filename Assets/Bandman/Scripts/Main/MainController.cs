@@ -24,7 +24,7 @@ public class MainController : MonoBehaviour
 		//AppC
 		if (buttonName == "GameFeatButton") {
 			#if UNITY_IPHONE
-			GameFeatManager.instance.loadGF();
+			APUnityPlugin.ShowAppliPromotionWall();
 #endif
 
 #if UNITY_ANDROID
@@ -96,7 +96,7 @@ public class MainController : MonoBehaviour
 		GameObject[] galArray = GameObject.FindGameObjectsWithTag ("Gal");
 		GameObject[] kyabaArray = GameObject.FindGameObjectsWithTag ("Kyaba");
 		if (galArray.Length < 1 && kyabaArray.Length < 1) {
-			GameObject.Find ("Player").SendMessage ("PlayNegativeVoice"); 
+			playerController.PlayVoce();
 		}
 		
 	}
@@ -105,7 +105,6 @@ public class MainController : MonoBehaviour
 	{
 		Debug.Log ("gal tapped");
 		playerController.Atack(gesture.Selection.transform);
-	//	GameObject.Find ("Player").SendMessage ("PlayPositiveVoice");
 	}
 
 }

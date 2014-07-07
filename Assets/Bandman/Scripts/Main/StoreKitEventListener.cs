@@ -125,7 +125,7 @@ public class StoreKitEventListener : MonoBehaviour
 			kyabaObject.transform.parent = anchor.transform;
 		}
 		string title = "\u8cfc\u5165\u5b8c\u4e86";
-		string message = "\u30ad\u30e3\u30d0\u5b22\u30b2\u30c3\u30c8!!";
+		string message = "\u7df4\u7fd2\u751f\u30b2\u30c3\u30c8!!";
 		string[] buttons = new string[] {"OK"};
 		EtceteraBinding.showAlertWithTitleMessageAndButtons (title, message, buttons);
 	}

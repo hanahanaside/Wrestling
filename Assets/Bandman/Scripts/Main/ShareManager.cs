@@ -25,7 +25,6 @@ public class ShareManager : MonoBehaviour
 		EtceteraAndroidManager.promptCancelledEvent -= promptCancelledEvent;	
 #endif
 	}
-
 	
 	void Awake ()
 	{
@@ -47,22 +46,22 @@ public class ShareManager : MonoBehaviour
 	}
 	#endif
 	
-	void promptCancelledEvent()
+	void promptCancelledEvent ()
 	{
-		Debug.Log( "promptCancelledEvent" );
+		Debug.Log ("promptCancelledEvent");
 	}
-
 	
 	public IEnumerator showTweetComposer ()
 	{
 		string name = PrefsManager.getInstance ().GetShareName ();
 		int id = PrefsManager.getInstance ().GetShareImageId ();
-		mTweetText = "【" + name + "に進化した！】ブサ可愛いバンドマン育成アプリ、これ面白いからやってみて！⇒ http://tt5.us/band  #V系バン麺";
+		mTweetText = "【" + name + "に進化した！】昭和プロレスのアプリ面白いからやってみて！→http://tt5.us/wrestling　#プロレス";
 
 
 		#if UNITY_IPHONE
 		mImagePath = Application.dataPath + "/Raw/player" + id + "_a.png";
 		yield return new WaitForSeconds (1.0f);
+
 		TwitterBinding.showTweetComposer (mTweetText, mImagePath);
 		#endif
 
@@ -79,7 +78,10 @@ public class ShareManager : MonoBehaviour
 		}
 		yield return 0;
 #endif   
-		yield return 0;
+		GameObject dialog = GameObject.Find ("FinishedEvolutionDialog(Clone)");
+		if (dialog != null) {
+			Destroy (dialog);
+		}
 	}
 
 	#if UNITY_ANDROID

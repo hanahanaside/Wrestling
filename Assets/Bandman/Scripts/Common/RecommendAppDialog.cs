@@ -19,6 +19,8 @@ public class RecommendAppDialog : AlertDialog{
 			Application.OpenURL (mPublicityUrl);
 		}
 		#endif
+
+		Destroy(gameObject);
 	}
 
 	public override void Show(){
