@@ -14,8 +14,8 @@ public class FinishedEvolutionDialog : AlertDialog
 			StartCoroutine (GameObject.Find ("ShareManager").GetComponent<ShareManager> ().showTweetComposer ());
 		} else {
 			GameObject.Find("ChekiButton").SendMessage("OnClick");
+			Destroy(gameObject);
 		}
-		Destroy(gameObject);
 	}
 
 	public override void Show ()

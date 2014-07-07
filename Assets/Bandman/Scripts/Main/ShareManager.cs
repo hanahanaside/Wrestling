@@ -25,7 +25,6 @@ public class ShareManager : MonoBehaviour
 		EtceteraAndroidManager.promptCancelledEvent -= promptCancelledEvent;	
 #endif
 	}
-
 	
 	void Awake ()
 	{
@@ -47,11 +46,10 @@ public class ShareManager : MonoBehaviour
 	}
 	#endif
 	
-	void promptCancelledEvent()
+	void promptCancelledEvent ()
 	{
-		Debug.Log( "promptCancelledEvent" );
+		Debug.Log ("promptCancelledEvent");
 	}
-
 	
 	public IEnumerator showTweetComposer ()
 	{
@@ -63,6 +61,7 @@ public class ShareManager : MonoBehaviour
 		#if UNITY_IPHONE
 		mImagePath = Application.dataPath + "/Raw/player" + id + "_a.png";
 		yield return new WaitForSeconds (1.0f);
+
 		TwitterBinding.showTweetComposer (mTweetText, mImagePath);
 		#endif
 
@@ -79,7 +78,10 @@ public class ShareManager : MonoBehaviour
 		}
 		yield return 0;
 #endif   
-		yield return 0;
+		GameObject dialog = GameObject.Find ("FinishedEvolutionDialog(Clone)");
+		if (dialog != null) {
+			Destroy (dialog);
+		}
 	}
 
 	#if UNITY_ANDROID

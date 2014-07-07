@@ -46,11 +46,16 @@ public class StatusBoard : MonoBehaviour
 		int nextExpPoint = int.Parse (mNextExpLabel.text);
 		float progress = (float)currentExpPoint / (float)nextExpPoint;
 		mExpProgressBar.value = progress;
-		if (currentExpPoint >= nextExpPoint) {
+		if (currentExpPoint >= 3) {
 			GameObject player = GameObject.Find ("Player");
 			player.SendMessage ("StartEvolution");
 		}
-	}
+
+/*		if (currentExpPoint >= nextExpPoint) {
+			GameObject player = GameObject.Find ("Player");
+			player.SendMessage ("StartEvolution");
+		}
+*/	}
 
 	private void FinishEvolution (int evolutionPoint)
 	{
