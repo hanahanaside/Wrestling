@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
 	private bool isEvolution = false;
 	private GameObject animationObject;
 	private AudioClip voiceAudioClip;
+	private bool isAnimation = false;
 
 	public void PlayVoce ()
 	{
@@ -48,6 +49,7 @@ public class PlayerController : MonoBehaviour
 	
 	void OnAnimationFinished (Transform player)
 	{
+		isAnimation = false;
 		gameObject.transform.position = player.position;
 		renderer.enabled = true;
 		animationObject.SetActive (false);
@@ -60,6 +62,10 @@ public class PlayerController : MonoBehaviour
 
 	public void Atack (Transform target)
 	{
+		if(isAnimation){
+			return;
+		}
+		isAnimation = true;
 		renderer.enabled = false;
 		animationObject.SetActive (true);
 		animationObject.BroadcastMessage ("StartAnimation", target);
