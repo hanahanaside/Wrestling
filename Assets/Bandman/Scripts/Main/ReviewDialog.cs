@@ -36,6 +36,7 @@ public class ReviewDialog : AlertDialog
 			//do not show
 			PrefsManager.getInstance ().SetReviewed ();
 		}
+		Destroy(gameObject);
 	}
 
 	public override void Show ()

@@ -105,7 +105,6 @@ public class MainController : MonoBehaviour
 	{
 		Debug.Log ("gal tapped");
 		playerController.Atack(gesture.Selection.transform);
-	//	GameObject.Find ("Player").SendMessage ("PlayPositiveVoice");
 	}
 
 }

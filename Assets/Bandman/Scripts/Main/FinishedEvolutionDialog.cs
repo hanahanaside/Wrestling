@@ -15,6 +15,7 @@ public class FinishedEvolutionDialog : AlertDialog
 		} else {
 			GameObject.Find("ChekiButton").SendMessage("OnClick");
 		}
+		Destroy(gameObject);
 	}
 
 	public override void Show ()
@@ -31,7 +32,6 @@ public class FinishedEvolutionDialog : AlertDialog
 		#endif
 		
 		#if UNITY_ANDROID
-
 		EtceteraAndroid.showAlert(title,MESSAGE,POSITIVE_BUTTON,NEGATIVE_BUTTON);
 		#endif
 	}
