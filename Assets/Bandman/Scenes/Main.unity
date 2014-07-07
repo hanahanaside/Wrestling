@@ -4193,8 +4193,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ca59506b95b7472395baa03fbd0cd2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  consumerKey: vXcbf9dREykbbvn88phrg
-  consumerSecret: gZtYdjuJIB8cvd9U4ovZTpcAmNlTP5MlBa1f4Xmq8w
+  consumerKey: liSuWV5eRSMXCO03HUtyVxPF3
+  consumerSecret: Md7XCpOmfkWry9nChTY28G729o0jn1J1vTuSUXtvos1IYbDczo
 --- !u!1 &1860008749
 GameObject:
   m_ObjectHideFlags: 0
