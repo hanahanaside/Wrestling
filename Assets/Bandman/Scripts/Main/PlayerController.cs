@@ -5,6 +5,7 @@ public class PlayerController : MonoBehaviour
 {
 	
 	public GameObject uiRoot;
+	public BackGroundKeeper backGroundKeeper;
 	private tk2dSpriteAnimator spriteAnimator;
 	private tk2dSprite mTk2dSprite;
 	private int evolutionPoint = 0;
@@ -29,6 +30,7 @@ public class PlayerController : MonoBehaviour
 		mTk2dSprite = GetComponent<tk2dSprite> ();
 		mover = GetComponent<Mover> ();
 		setEvolutionPoint ();
+		backGroundKeeper.UpdateBackGround(evolutionPoint);
 		SetAnimationObject();
 		animationObject.SetActive(false);
 		StartIdleAnimation ();
@@ -94,6 +96,7 @@ public class PlayerController : MonoBehaviour
 		} else {
 			PlayerDataDao.getInstance ().UpdateEvolutionPoint (evolutionPoint + 1);
 			setEvolutionPoint ();
+			backGroundKeeper.UpdateBackGround(evolutionPoint);
 			SetAnimationObject();
 			animationObject.SetActive(false);
 			GameObject.Find ("BackGround").GetComponent<MeshRenderer> ().enabled = true;
