@@ -12,6 +12,15 @@ public class PlayerController : MonoBehaviour
 	private Mover mover;
 	private bool isEvolution = false;
 	private GameObject animationObject;
+	private AudioClip voiceAudioClip;
+
+	public void PlayVoce ()
+	{
+		if (PrefsManager.getInstance ().GetSoundMode () == PrefsManager.SOUND_ON) {
+			Debug.Log("play");
+			audio.PlayOneShot (voiceAudioClip);
+		}
+	}
 
 	void OnEnable ()
 	{
@@ -30,34 +39,37 @@ public class PlayerController : MonoBehaviour
 		mTk2dSprite = GetComponent<tk2dSprite> ();
 		mover = GetComponent<Mover> ();
 		setEvolutionPoint ();
-		backGroundKeeper.UpdateBackGround(evolutionPoint);
-		SetAnimationObject();
-		animationObject.SetActive(false);
+		backGroundKeeper.UpdateBackGround (evolutionPoint);
+		SetVoiceAudioClip ();
+		SetAnimationObject ();
+		animationObject.SetActive (false);
 		StartIdleAnimation ();
 	}
 	
-	void OnAnimationFinished(Transform player){
+	void OnAnimationFinished (Transform player)
+	{
 		gameObject.transform.position = player.position;
 		renderer.enabled = true;
-		animationObject.SetActive(false);
-		if(isEvolution){
-			mover.StopWalking();
+		animationObject.SetActive (false);
+		if (isEvolution) {
+			mover.StopWalking ();
 			transform.localPosition = new Vector3 (0, 0);
 			mTk2dSprite.SetSprite ("player" + evolutionPoint + "_a");
 		}
 	}
 
-	public void Atack(Transform target){
+	public void Atack (Transform target)
+	{
 		renderer.enabled = false;
-		animationObject.SetActive(true);
-		animationObject.BroadcastMessage("StartAnimation",target);
+		animationObject.SetActive (true);
+		animationObject.BroadcastMessage ("StartAnimation", target);
 	}
 	
 	void StartEvolution ()
 	{
 		Debug.Log ("StartEvolution");
 		isEvolution = true;
-		uiRoot.SetActive(false);
+		uiRoot.SetActive (false);
 		gameObject.tag = "Untouch";
 		GameObject.Find ("BackGround").GetComponent<MeshRenderer> ().enabled = false;
 		mover.StopWalking ();
@@ -96,15 +108,16 @@ public class PlayerController : MonoBehaviour
 		} else {
 			PlayerDataDao.getInstance ().UpdateEvolutionPoint (evolutionPoint + 1);
 			setEvolutionPoint ();
-			backGroundKeeper.UpdateBackGround(evolutionPoint);
-			SetAnimationObject();
-			animationObject.SetActive(false);
+			backGroundKeeper.UpdateBackGround (evolutionPoint);
+			SetVoiceAudioClip ();
+			SetAnimationObject ();
+			animationObject.SetActive (false);
 			GameObject.Find ("BackGround").GetComponent<MeshRenderer> ().enabled = true;
 			StartIdleAnimation ();
 			yield return new WaitForSeconds (2);
 			GameObject.Find ("LevelUp").audio.Play ();
 			yield return new WaitForSeconds (4.0f);
-			uiRoot.SetActive(true);
+			uiRoot.SetActive (true);
 			GameObject.Find ("StatusBoard").SendMessage ("FinishEvolution", evolutionPoint);
 			isEvolution = false;
 			GameObject.Find ("BGM").audio.Play ();
@@ -125,8 +138,8 @@ public class PlayerController : MonoBehaviour
 
 	private void setEvolutionPoint ()
 	{
-		Hashtable playerData = PlayerDataDao.getInstance().getPlayerData();
-		evolutionPoint = (int)playerData[PlayerDataDao.EVOLUTION_POINT_FIELD];
+		Hashtable playerData = PlayerDataDao.getInstance ().getPlayerData ();
+		evolutionPoint = (int)playerData [PlayerDataDao.EVOLUTION_POINT_FIELD];
 	}
 
 	private void StartIdleAnimation ()
@@ -134,9 +147,15 @@ public class PlayerController : MonoBehaviour
 		spriteAnimator.Play ("Idle" + evolutionPoint);
 	}
 
-	private void SetAnimationObject(){
-		string path = "Prefabs/PlayerAtackAnimation_"+evolutionPoint;
-		animationObject = Instantiate(Resources.Load(path)) as GameObject;
+	private void SetAnimationObject ()
+	{
+		string path = "Prefabs/PlayerAtackAnimation_" + evolutionPoint;
+		animationObject = Instantiate (Resources.Load (path)) as GameObject;
 	}
 
+	private void SetVoiceAudioClip ()
+	{
+		string path = "Audios/b"+(evolutionPoint -1);
+		voiceAudioClip = (AudioClip)Resources.Load (path);
+	}
 }

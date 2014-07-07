@@ -3947,7 +3947,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3006
+  startingRenderQueue: 3007
   mAlpha: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}
@@ -4453,7 +4453,6 @@ GameObject:
   - 114: {fileID: 2030361895}
   - 65: {fileID: 2030361901}
   - 82: {fileID: 2030361904}
-  - 114: {fileID: 2030361903}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4579,27 +4578,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiRoot: {fileID: 1515704293}
   backGroundKeeper: {fileID: 1027199228}
---- !u!114 &2030361903
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2030361894}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ca56ff0fc0ae94fc5800b31702c42c4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  positiveVoiceArray:
-  - {fileID: 8300000, guid: 9f09dcb38030c412c952dacda6531522, type: 3}
-  - {fileID: 8300000, guid: 9236925a2590545c8a76d95a6629e2e7, type: 3}
-  - {fileID: 8300000, guid: cba7df0777c584929bceae06dd01a41e, type: 3}
-  - {fileID: 8300000, guid: 10c572b3f0c7946cd9679600f5c0cac2, type: 3}
-  negativeVoiceArray:
-  - {fileID: 8300000, guid: 684ff23bc48134c0092bfca495a53134, type: 3}
-  - {fileID: 8300000, guid: 2901b0b8a619b4997a4906b5280f0a8a, type: 3}
-  - {fileID: 8300000, guid: 558099dc17b0c45d6859ec27ae064038, type: 3}
-  - {fileID: 8300000, guid: eb16111df245e45f9bda501359e992c6, type: 3}
 --- !u!82 &2030361904
 AudioSource:
   m_ObjectHideFlags: 0

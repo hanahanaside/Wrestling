@@ -96,7 +96,7 @@ public class MainController : MonoBehaviour
 		GameObject[] galArray = GameObject.FindGameObjectsWithTag ("Gal");
 		GameObject[] kyabaArray = GameObject.FindGameObjectsWithTag ("Kyaba");
 		if (galArray.Length < 1 && kyabaArray.Length < 1) {
-			GameObject.Find ("Player").SendMessage ("PlayNegativeVoice"); 
+			playerController.PlayVoce();
 		}
 		
 	}
