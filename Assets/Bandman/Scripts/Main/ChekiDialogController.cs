@@ -33,7 +33,7 @@ public class ChekiDialogController : MonoBehaviour
 			descriptionLabel.text = "???";
 			chekiSprite.spriteName = "cheki_question";
 		}
-		pageCountLabel.text = mPageCount + "/23";
+		pageCountLabel.text = mPageCount + "/24";
 
 	}
 
@@ -47,7 +47,7 @@ public class ChekiDialogController : MonoBehaviour
 		if (buttonName == "PreviousChekiButton") {
 			Debug.Log (buttonName);
 			if (mPageCount <= 1) {
-				mPageCount = 23;
+				mPageCount = 24;
 			} else {
 				mPageCount--;
 			}
@@ -55,7 +55,7 @@ public class ChekiDialogController : MonoBehaviour
 		}
 
 		if (buttonName == "NextChekiButton") {
-			if (mPageCount >= 23) {
+			if (mPageCount >= 24) {
 				mPageCount = 1;
 			} else {
 				mPageCount++;

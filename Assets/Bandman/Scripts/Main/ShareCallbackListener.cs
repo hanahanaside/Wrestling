@@ -107,11 +107,11 @@ public class ShareCallbackListener : MonoBehaviour
 			AddKyaba ();
 			CharactorListDao.getInstance ().UpdateFlagTweet (shareImageId, CharactorListDao.TWEETED);
 			title = "\u30c4\u30a4\u30fc\u30c8\u6210\u529f";
-			message = "\u30ad\u30e3\u30d0\u5b22\u30b2\u30c3\u30c8!!";
+			message = "\u7df4\u7fd2\u751f\u30b2\u30c3\u30c8!!";
 			break;
 		case CharactorListDao.TWEETED:
 			title = "\u30c4\u30a4\u30fc\u30c8\u6210\u529f";
-			message = "\u30ad\u30e3\u30d0\u5b22\u306f\u8ffd\u52a0\u6e08\u307f\u3067\u3059";
+			message = "\u7df4\u7fd2\u751f\u306f\u8ffd\u52a0\u6e08\u307f\u3067\u3059";
 			break;
 		}
 		ShowOKDialog(title,message);

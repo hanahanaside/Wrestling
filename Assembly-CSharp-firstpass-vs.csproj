@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Plugins\APUnityPlugin.cs" />
      <Compile Include="Assets\Plugins\Etcetera\EtceteraBinding.cs" />
      <Compile Include="Assets\Plugins\Etcetera\EtceteraManager.cs" />
      <Compile Include="Assets\Plugins\Etcetera\demo\CubeRotator.cs" />

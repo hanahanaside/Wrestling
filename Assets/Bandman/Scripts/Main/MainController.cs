@@ -24,7 +24,7 @@ public class MainController : MonoBehaviour
 		//AppC
 		if (buttonName == "GameFeatButton") {
 			#if UNITY_IPHONE
-			GameFeatManager.instance.loadGF();
+			APUnityPlugin.ShowAppliPromotionWall();
 #endif
 
 #if UNITY_ANDROID

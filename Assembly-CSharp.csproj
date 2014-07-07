@@ -46,7 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\BackGroundKeeper.cs" />
      <Compile Include="Assets\Bandman\Scripts\Common\AlertDialog.cs" />
      <Compile Include="Assets\Bandman\Scripts\Common\PrefsManager.cs" />
      <Compile Include="Assets\Bandman\Scripts\Common\RecommendAppDialog.cs" />
@@ -61,12 +60,14 @@
      <Compile Include="Assets\Bandman\Scripts\Harajuku\HarajukuGal.cs" />
      <Compile Include="Assets\Bandman\Scripts\Harajuku\HarajukuGalGenerator.cs" />
      <Compile Include="Assets\Bandman\Scripts\Harajuku\HarajukuSoundManager.cs" />
+     <Compile Include="Assets\Bandman\Scripts\Harajuku\NotificationSender.cs" />
      <Compile Include="Assets\Bandman\Scripts\Init\APNsRegister.cs" />
      <Compile Include="Assets\Bandman\Scripts\Init\DatabaseCreator.cs" />
      <Compile Include="Assets\Bandman\Scripts\Init\GCMRegister.cs" />
      <Compile Include="Assets\Bandman\Scripts\Init\GameFeatManager.cs" />
      <Compile Include="Assets\Bandman\Scripts\Init\InitController.cs" />
      <Compile Include="Assets\Bandman\Scripts\Init\NotificationListenerIOS.cs" />
+     <Compile Include="Assets\Bandman\Scripts\Main\BackGroundKeeper.cs" />
      <Compile Include="Assets\Bandman\Scripts\Main\ChekiDialogController.cs" />
      <Compile Include="Assets\Bandman\Scripts\Main\CommercialDialogController.cs" />
      <Compile Include="Assets\Bandman\Scripts\Main\FinishedEvolutionDialog.cs" />

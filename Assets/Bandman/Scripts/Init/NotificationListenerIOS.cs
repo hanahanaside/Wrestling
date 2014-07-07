@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class NotificationListenerIOS : MonoBehaviour {
+public class NotificationListenerIOS : MonoBehaviour
+{
 
 	public RecommendAppDialog recommendAppDialogPrefab;
 
@@ -22,6 +23,11 @@ public class NotificationListenerIOS : MonoBehaviour {
 		EtceteraManager.remoteNotificationReceivedEvent -= remoteNotificationReceived;
 	}
 
+	void Start()
+	{
+		DontDestroyOnLoad(gameObject);
+	}
+
 	void localNotificationWasReceivedEvent (IDictionary notification)
 	{
 		Debug.Log ("localNotificationWasReceivedEvent");
@@ -32,13 +38,14 @@ public class NotificationListenerIOS : MonoBehaviour {
 	{
 		Debug.Log ("localNotificationWasReceivedAtLaunchEvent");
 		Prime31.Utils.logObject (notification);
+		ClearNotifications();
 	}
 
 	void remoteNotificationReceivedAtLaunch (IDictionary notification)
 	{
 		Debug.Log ("remoteNotificationReceivedAtLaunch");
 		Prime31.Utils.logObject (notification);
-		NotificationServices.ClearRemoteNotifications();
+		ClearNotifications();
 		RecommendAppDialog recommendAppDialog = Instantiate(recommendAppDialogPrefab) as RecommendAppDialog;
 		recommendAppDialog.Show();
 	}
@@ -48,7 +55,17 @@ public class NotificationListenerIOS : MonoBehaviour {
 		Debug.Log( "remoteNotificationReceived" );
 		Prime31.Utils.logObject( notification );
 	}
-	
+
+	private void ClearNotifications ()
+	{
+		LocalNotification localNtification = new LocalNotification ();
+		localNtification.applicationIconBadgeNumber = -1;
+		NotificationServices.PresentLocalNotificationNow (localNtification);
+		NotificationServices.CancelAllLocalNotifications ();
+		NotificationServices.ClearRemoteNotifications ();
+		NotificationServices.ClearLocalNotifications ();
+	}
+
 
 
 #endif

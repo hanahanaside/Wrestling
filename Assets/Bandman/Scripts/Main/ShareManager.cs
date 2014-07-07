@@ -55,7 +55,7 @@ public class ShareManager : MonoBehaviour
 	{
 		string name = PrefsManager.getInstance ().GetShareName ();
 		int id = PrefsManager.getInstance ().GetShareImageId ();
-		mTweetText = "【" + name + "に進化した！】ブサ可愛いバンドマン育成アプリ、これ面白いからやってみて！⇒ http://tt5.us/band  #V系バン麺";
+		mTweetText = "【" + name + "に進化した！】昭和プロレスのアプリ面白いからやってみて！→http://tt5.us/wrestling　#プロレス";
 
 
 		#if UNITY_IPHONE

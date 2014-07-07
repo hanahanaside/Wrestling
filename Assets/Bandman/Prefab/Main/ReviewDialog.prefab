@@ -38,8 +38,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 809233791b1524dc3b88059772a7a1cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  appStoreUrl: http://www.yahoo.co.jp/
-  googlePlayUrl: https://play.google.com/store/apps/details?id=jp.konami.pawat2014
+  appStoreUrl: https://itunes.apple.com/app/id895348113
+  googlePlayUrl: https://play.google.com/store/apps/details?id=jp.co.hnut.wrestling
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
