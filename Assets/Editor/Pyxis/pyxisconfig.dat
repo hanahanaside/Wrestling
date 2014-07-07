@@ -1,0 +1,8 @@
+URL identifier=com.example
+URL schemes=example
+jp.co.septeni.pyxis.idn=com.example
+jp.co.septeni.pyxis.scm=example
+jp.co.septeni.pyxis.pid=0
+jp.co.septeni.pyxis.save_max=9999
+jp.co.septeni.pyxis.save_mode=1
+jp.co.septeni.pyxis.log_mode=True

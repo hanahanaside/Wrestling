@@ -1,0 +1,403 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41cb500cf0f58e74f9a52a8af931edde, type: 3}
+  m_Name: -tk2d
+  m_EditorClassIdentifier: 
+  version: 4
+  spriteAnimationIndex:
+  - assetGUID: 065a9bb7883dd479ea07047970dc7a37
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  - assetGUID: abe0afce848ea40aa9338fca201de1c8
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  - assetGUID: 61a20f60f501d4506afc84d414eb3ac3
+    dataGUID: 
+    managed: 0
+    loadable: 0
+  fontIndex: []
+  spriteCollectionIndex:
+  - name: MainSpriteCollection
+    spriteCollectionGUID: 6c6001733e84b4379bee0231aa6ca041
+    spriteCollectionDataGUID: 91c9efde9620d46aea2b37b4bdd11cb7
+    spriteNames:
+    - enemy_1
+    - player1_c
+    - player1_b
+    - player1_a
+    - player2_c
+    - player2_b
+    - player2_a
+    - player23_a
+    - player24_a
+    - player23_b
+    - player22_c
+    - enemy_2
+    - enemy_3
+    - player3_b
+    - player3_c
+    - player3_a
+    - player5_a
+    - player5_b
+    - player5_c
+    - player4_c
+    - player4_b
+    - player4_a
+    - player6_b
+    - player6_a
+    - player6_c
+    - player7_c
+    - player7_b
+    - player7_a
+    - player8_b
+    - player8_a
+    - player8_c
+    - player9_b
+    - player9_a
+    - player9_c
+    - player10_a
+    - player10_c
+    - player10_b
+    - player11_c
+    - player11_a
+    - player11_b
+    - premium_gal_a
+    - premium_gal_b
+    - premium_gal_d
+    - premium_gal_c
+    - player21_a
+    - player22_a
+    - player20_a
+    - player18_a
+    - player15_a
+    - player16_a
+    - player19_a
+    - player12_a
+    - player13_a
+    - player17_a
+    - player14_a
+    - player19_c
+    - player14_c
+    - player14_b
+    - player18_c
+    - player13_b
+    - player21_b
+    - player18_b
+    - player13_c
+    - player17_c
+    - player16_c
+    - player21_c
+    - player15_c
+    - player17_b
+    - player19_b
+    - player15_b
+    - player20_c
+    - player20_b
+    - player16_b
+    - player12_b
+    - player12_c
+    - player23_c
+    - gal_harajuku_b
+    - gal_harajuku_a
+    - player22_b
+    - enemy_4
+    spriteTextureGUIDs:
+    - 68674e1f4d92d406190fde21c0b11ffe
+    - f26ebf22ac36442e380e16fbf6a96d5e
+    - e00941e5d674e442ba5f9e984a4d1752
+    - f3ba8ceecd81b4fe1af9035e3119c776
+    - b412b40752d7246f0809d461d23b99da
+    - 6b808c7842b59400c829bae355f72451
+    - 692a453a9712543128ead2ccb9c8c35c
+    - d19b95c9dff97415fad198b8e36bbe9a
+    - 2dd89629b405a4c86890d69c65e46cbb
+    - 2f7403948a8ba43cc9e1b73e8ff1c77d
+    - b5705731dc003496890b9830da9a7665
+    - 155afc7f9bfd3471eab685e2c52f5452
+    - 791decb9b6a434134a377a9d11eb2bc7
+    - 067acc82ded704afc9b0215fe805b9e5
+    - 8a4cc5a584b8d44d4921d20755560a58
+    - 3489e66c567d843d4b96eeafec94581e
+    - 4c8c9bc61a8bd441a9f5c518f9ea800d
+    - bb7ad81a3cf67457d8d7f98b9130c6d3
+    - 4b8c9e4d1ca1a4b1db7e2568f06699bf
+    - fe527c80fe9eb48febaf88a7e7558a14
+    - eaafc111e64804b1382320eb30c014fc
+    - c3fb8f092a8144aa48b722ca922447a9
+    - 25e4c331d5be2449e9df99affab7fcb1
+    - 6f7120ba7f85449b98ad046e67ef40b0
+    - b8ff010e586ce4df48fa11467b482f28
+    - f8fe5c948b5e44e949d1bfe8315fa007
+    - 5a8dfa27990aa4ff09262c7e1706267f
+    - 7aaff859ae87b40afa098d48967e0f8b
+    - eb30c041e6f2449a5817ba383b1d8a54
+    - 9115e741e19ac43dba466bcadd6dec9e
+    - 59dc8fc2497534e299aa13fe5bf7310b
+    - b0b039c0683344b6fb202e3e98a16314
+    - 9645b887f09ff4d2fbdac1a3f69df441
+    - 1980df3bf858345ffbb62cdc4a10b577
+    - d88d603175f0c486998e78446fd5d787
+    - 0359ca82f55914dfaabd3b33e99525c5
+    - 2a94dacf76c4e4ac1a62a84b5a88dd12
+    - 237a6c2002ace4f879a231406dcca237
+    - 3d5b0064243674fd4b6dc5ae443e5844
+    - e78a4d6f5a37c4fddaee90f9e98333d7
+    - 167ea2e44ca8640c38dbfc1530b916bf
+    - 170632270df234c00a3724934cdb7b3e
+    - 7e5c5199aefbc4690b96b9422e19cb7f
+    - d55013ee3e4234c45a180f7a44e9e25c
+    - 1c4786f6b7c4449a1876906ebfed3c3c
+    - 1df6ca21a01e64bd3aca7659eb366c0b
+    - 3c00395f5670f409dbe2168ace94bec2
+    - 43a85ff1675c34f6a9436145c165cf27
+    - 6bd5edecb94984473a1f7a0bef81702b
+    - 8bf69f88c79b04583950e8cb97cc3f67
+    - 977f4af0f2e854f30bda7342fe1b82a2
+    - a6e3db78d13bd4e3ba199375173269ab
+    - acfc1687e86dd48068c3997215b417b7
+    - ce945b6182f814b29ad1e12ec54d3882
+    - ea443ce6b436e458aa7298527e60d7e9
+    - 08b9726e55b7a474cb839b9db1fe1cd4
+    - 09582627c4db4495a990752b27c86481
+    - 15904e1db1d15447ba492efb31fb3d76
+    - 1939286093fab40ce8f40fd6dd1363ae
+    - 2fe3c6f27b5a44397b57a936dfc742d7
+    - 4488e65c0c59048ee8aaed0c373dbb46
+    - 4beffa5e1f63146ef8ab116c2dae5af8
+    - 50f40a71fa9384bbb8a70f09baf6b598
+    - 665603cd3a06a484caeaba6ef2c0d2ce
+    - 670fd44b22a9240fb97b9bcffd16dcce
+    - 6a99c81d4e23a4969a865b620926d9b7
+    - 705c8690087f6431ea4c3e2a137527fb
+    - 82197ab53fd67446fb45ccb303144bd1
+    - 9d30f7ae652574e4bb9d701092f29d50
+    - b02479bf484b44c7fb02c7049cecadeb
+    - bdb44e98f83f3469c92004ccc3aee707
+    - c89afdd293d5b47bea7ef3442bf1df84
+    - d23f6b836ee4443f1a15997f5c93f2da
+    - eff1cdbe890fa4205a7e1081df404e4c
+    - f0397672289f0432ab12cb14f67476bb
+    - b6e77f89a85ad433d90ddbafa39a7987
+    - 44057d592985042d180d507f170327dc
+    - b9e3777173c4b45c8bbb13f2a872ded1
+    - e7948f1b36f724361989f88245261eb8
+    - f2901adf3a85f4169a9a256b4f3787b7
+    spriteTextureTimeStamps:
+    - 1404390742
+    - 1404390742
+    - 1404149969
+    - 1404149952
+    - 1404150569
+    - 1404150560
+    - 1404150548
+    - 1404483573
+    - 1404483605
+    - 1404483583
+    - 1404483547
+    - 1404475929
+    - 1404476638
+    - 1404150715
+    - 1404150741
+    - 1404150703
+    - 1404150836
+    - 1404150843
+    - 1404150855
+    - 1404150803
+    - 1404150791
+    - 1404150782
+    - 1404150904
+    - 1404150885
+    - 1404476638
+    - 1404150981
+    - 1404150971
+    - 1404150963
+    - 1404151988
+    - 1404151979
+    - 1404151998
+    - 1404476590
+    - 1404476575
+    - 1404476599
+    - 1404482626
+    - 1404482732
+    - 1404482640
+    - 1404482789
+    - 1404482759
+    - 1404482770
+    - 1391603878
+    - 1391603878
+    - 1391603878
+    - 1391603878
+    - 1404483463
+    - 1404483519
+    - 1404483317
+    - 1404483205
+    - 1404483018
+    - 1404483096
+    - 1404483252
+    - 1404482831
+    - 1404482877
+    - 1404483139
+    - 1404482961
+    - 1404483272
+    - 1404482993
+    - 1404482970
+    - 1404483224
+    - 1404482891
+    - 1404483476
+    - 1404483213
+    - 1404482903
+    - 1404483163
+    - 1404483119
+    - 1404483491
+    - 1404483077
+    - 1404483147
+    - 1404483260
+    - 1404483026
+    - 1404483338
+    - 1404483327
+    - 1404483105
+    - 1404482840
+    - 1404482849
+    - 1404483592
+    - 1404141418
+    - 1404141404
+    - 1404483528
+    - 1404493062
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: BGSpriteCollection
+    spriteCollectionGUID: 256eda73e1cc94a318a17eacf7d4d6d5
+    spriteCollectionDataGUID: 32f879d9758434a9fb97ac9f4aa14873
+    spriteNames:
+    - bg_main_3
+    - bg_main_2
+    - bg_main_1
+    - bg_harajuku
+    spriteTextureGUIDs:
+    - 592002103a50f4660b16e1559ee70c77
+    - ee26a5e97c7a243fa93fb4a0143dcaab
+    - fb7f9a272392e4e6da29a487b52673af
+    - 0fdb1aa3791ea4e65af2d83854985e80
+    spriteTextureTimeStamps:
+    - 1404146244
+    - 1404146229
+    - 1404146212
+    - 1404141874
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: MessageSpriteCollection1
+    spriteCollectionGUID: bcc9b9e1f73b843228b7660bda52a9b5
+    spriteCollectionDataGUID: cc6ec3f2148d3428ea63ffb8222732f1
+    spriteNames:
+    - message_1
+    - message_2
+    - message_5
+    - message_4
+    - message_3
+    - message_6
+    - message_7
+    - message_8
+    - message_9
+    spriteTextureGUIDs:
+    - f7c44d487c93d4fedb57339c2c17619b
+    - b74f9ff1940a54852b30a32beef80a7c
+    - 8e04c626afd084e6b8d464d784dfbd5b
+    - f9d8ba716cd4349f688de9be6d919f43
+    - fc9713ae1638a4002bc578f111161d79
+    - 9933e1e5f74594415b95d87a5666fec4
+    - 1afc344d48d374699b05ca7f1efef4b5
+    - 47ecf458072cb4685a0cd023b35d8997
+    - b881e2fad7ca64303b40805bf7276385
+    spriteTextureTimeStamps:
+    - 1404404382
+    - 1404406742
+    - 1404407246
+    - 1404406925
+    - 1404406870
+    - 1404407267
+    - 1404407286
+    - 1404407305
+    - 1404407357
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: MessageSpriteCollection2
+    spriteCollectionGUID: e7145028eb20f4aba9103be2915832cf
+    spriteCollectionDataGUID: f757c22e9bbe04b5da7407646371c1ef
+    spriteNames:
+    - message_10
+    - message_14
+    - message_13
+    - message_15
+    - message_12
+    - message_11
+    - message_16
+    - message_17
+    - 
+    - message_18
+    spriteTextureGUIDs:
+    - 00f448cfe089c405c9667f59073d0fc1
+    - 325fe71a4c6c1452ba4a1c126431fcb4
+    - 51f16a884f9b74a23bc7304a52e03860
+    - e0b019e8f831c4dbe8e0b65efa6985b8
+    - f22c586c3626b4880adc7f6b9c719a43
+    - f3939b0b1c2134e88b5b3526f8796973
+    - 32913ab3f0aa04052be5ad6c9e8c2ce0
+    - 497d06f751e844d98af737f5db1ef404
+    - 
+    - e585ee7ce3f92434f83978ee038d1b94
+    spriteTextureTimeStamps:
+    - 1404407377
+    - 1404487226
+    - 1404487194
+    - 1404487240
+    - 1404487178
+    - 1404487162
+    - 1404487254
+    - 1404487268
+    - 0
+    - 1404487279
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3
+  - name: MessageSpriteCollection3
+    spriteCollectionGUID: 445c0211ec4b9414a9d9807b447fc4dd
+    spriteCollectionDataGUID: 14e343e1d166e4b538577d03c4413b6f
+    spriteNames:
+    - message_20
+    - message_23
+    - message_21
+    - message_22
+    - message_19
+    spriteTextureGUIDs:
+    - 3ddbc2b0521c940ca9f4fd57321fc37f
+    - 790d726a4d37c448db41e39d177772d5
+    - a6b1255150fd249c78f538961f470110
+    - dc57788e31074478389bdb167069b720
+    - b2a7a180071e04535b253723d47378b3
+    spriteTextureTimeStamps:
+    - 1404487308
+    - 1404487344
+    - 1404487319
+    - 1404487332
+    - 1404487292
+    managedSpriteCollection: 0
+    loadable: 0
+    assetName: 
+    version: 3

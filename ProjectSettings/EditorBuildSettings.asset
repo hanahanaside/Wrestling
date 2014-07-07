@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 0
+    path: Assets/Test.unity
+  - enabled: 1
+    path: Assets/Bandman/Scenes/Init.unity
+  - enabled: 1
+    path: Assets/Bandman/Scenes/Tutorial.unity
+  - enabled: 1
+    path: Assets/Bandman/Scenes/Main.unity
+  - enabled: 1
+    path: Assets/Bandman/Scenes/Opening.unity
+  - enabled: 1
+    path: Assets/Bandman/Scenes/Test.unity
+  - enabled: 1
+    path: Assets/Bandman/Scenes/Harajuku.unity
+  - enabled: 1
+    path: Assets/Bandman/Scenes/Ending.unity
+  - enabled: 0
+    path: Assets/Bandman/Scenes/Tweet.unity
+  - enabled: 0
+    path: Assets/Bandman/Scenes/Test.unity
+  - enabled: 0
+    path: Assets/Adstir.unity

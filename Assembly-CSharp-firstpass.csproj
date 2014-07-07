@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{CACC4FCD-1619-B2AD-13B0-E863F1CE6612}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_IPHONE;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_GENERICS;ENABLE_SUBSTANCE;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;UNITY_IPHONE_API;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_2D_PHYSICS;ENABLE_GAMECENTER;UNITY_IOS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;UNITY_4_3_4;UNITY_4_3;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\Etcetera\EtceteraBinding.cs" />
+     <Compile Include="Assets\Plugins\Etcetera\EtceteraManager.cs" />
+     <Compile Include="Assets\Plugins\Etcetera\demo\CubeRotator.cs" />
+     <Compile Include="Assets\Plugins\Etcetera\demo\EtceteraEventListener.cs" />
+     <Compile Include="Assets\Plugins\Etcetera\demo\EtceteraGUIManager.cs" />
+     <Compile Include="Assets\Plugins\Etcetera\demo\EtceteraGUIManagerThree.cs" />
+     <Compile Include="Assets\Plugins\Etcetera\demo\EtceteraGUIManagerTwo.cs" />
+     <Compile Include="Assets\Plugins\EtceteraAndroid\EtceteraAndroid.cs" />
+     <Compile Include="Assets\Plugins\EtceteraAndroid\EtceteraAndroidManager.cs" />
+     <Compile Include="Assets\Plugins\EtceteraAndroid\demo\EtceteraAndroidEventListener.cs" />
+     <Compile Include="Assets\Plugins\EtceteraAndroid\demo\EtceteraUIManager.cs" />
+     <Compile Include="Assets\Plugins\EtceteraAndroid\demo\EtceteraUIManagerTwo.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Dev\FingerDebug.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Base\ContinuousGestureRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Base\DiscreteGestureRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Base\FingerEventDetector.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Base\GestureRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Base\GestureRecognizerDelegate.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Components\FingerClusterManager.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Components\ScreenRaycaster.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Finger Event Detectors\FingerDownDetector.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Finger Event Detectors\FingerHoverDetector.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Finger Event Detectors\FingerMotionDetector.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Finger Event Detectors\FingerUpDetector.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\FingerGestures.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Gesture Recognizers\DragRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Gesture Recognizers\LongPressRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Gesture Recognizers\PinchRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Gesture Recognizers\PointCloudGestureTemplate.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Gesture Recognizers\PointCloudRegognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Gesture Recognizers\SwipeRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Gesture Recognizers\TapRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Gesture Recognizers\TwistRecognizer.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Input Providers\FGInputProvider.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Input Providers\FGMouseInputProvider.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Input Providers\FGTouchInputProvider.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Toolbox\Camera\TBDragView.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Toolbox\Camera\TBLookAtTap.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Toolbox\Camera\TBOrbit.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Toolbox\Camera\TBPan.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Toolbox\Camera\TBPinchZoom.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Toolbox\TBDragToMove.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Toolbox\TBHoverChangeMaterial.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Toolbox\TBHoverChangeScale.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Toolbox\TBPinchToScale.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Toolbox\TBQuickSetup.cs" />
+     <Compile Include="Assets\Plugins\FingerGestures\Scripts\Toolbox\TBTwistToRotate.cs" />
+     <Compile Include="Assets\Plugins\FlurryIntegration\FlurryAgent.cs" />
+     <Compile Include="Assets\Plugins\FlurryIntegration\FlurryAgentAndroid.cs" />
+     <Compile Include="Assets\Plugins\FlurryIntegration\FlurryAgentIOS.cs" />
+     <Compile Include="Assets\Plugins\FlurryIntegration\FlurryManager.cs" />
+     <Compile Include="Assets\Plugins\GFUnityPlugin.cs" />
+     <Compile Include="Assets\Plugins\GameFeatObserver.cs" />
+     <Compile Include="Assets\Plugins\GoogleCloudMessaging\GoogleCloudMessaging.cs" />
+     <Compile Include="Assets\Plugins\GoogleCloudMessaging\GoogleCloudMessagingManager.cs" />
+     <Compile Include="Assets\Plugins\GoogleCloudMessaging\demo\GoogleCloudMessagingEventListener.cs" />
+     <Compile Include="Assets\Plugins\GoogleCloudMessaging\demo\GoogleCloudMessagingUI.cs" />
+     <Compile Include="Assets\Plugins\InAppBillingAndroid\GoogleIAB.cs" />
+     <Compile Include="Assets\Plugins\InAppBillingAndroid\GoogleIABManager.cs" />
+     <Compile Include="Assets\Plugins\InAppBillingAndroid\GooglePurchase.cs" />
+     <Compile Include="Assets\Plugins\InAppBillingAndroid\GoogleSkuInfo.cs" />
+     <Compile Include="Assets\Plugins\InAppBillingAndroid\demo\GoogleIABEventListener.cs" />
+     <Compile Include="Assets\Plugins\InAppBillingAndroid\demo\IABUIManager.cs" />
+     <Compile Include="Assets\Plugins\MiniJSON.cs" />
+     <Compile Include="Assets\Plugins\Nend\NendAd.cs" />
+     <Compile Include="Assets\Plugins\Nend\NendAdBanner.cs" />
+     <Compile Include="Assets\Plugins\Nend\NendAdIcon.cs" />
+     <Compile Include="Assets\Plugins\Nend\NendUtils.cs" />
+     <Compile Include="Assets\Plugins\Pyxis\DebugMessage.cs" />
+     <Compile Include="Assets\Plugins\Pyxis\PyxisiOSPlugin.cs" />
+     <Compile Include="Assets\Plugins\Pyxis\TargetChecker.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingAndroid\FacebookAndroid.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingAndroid\TwitterAndroid.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingAndroid\demoAndroid\FacebookUIManager.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingAndroid\demoAndroid\TwitterUIManager.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingCommon\Facebook\Facebook.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingCommon\Facebook\FacebookBatchRequest.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingCommon\Facebook\FacebookDataTypes.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingCommon\Facebook\FacebookEventListener.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingCommon\Facebook\FacebookManager.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingCommon\Twitter\TwitterEventListener.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingCommon\Twitter\TwitterManager.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingIOS\FacebookBinding.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingIOS\SharingBinding.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingIOS\SharingManager.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingIOS\TwitterBinding.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingIOS\demoIOS\FacebookGUIManager.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingIOS\demoIOS\SharingGUIManager.cs" />
+     <Compile Include="Assets\Plugins\SocialNetworkingIOS\demoIOS\TwitterGUIManager.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\StoreKitBinding.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\StoreKitDownload.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\StoreKitManager.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\StoreKitProduct.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\StoreKitTransaction.cs" />
+     <Compile Include="Assets\Plugins\StoreKit\demo\StoreKitGUIManager.cs" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\NGUI\ReadMe - 3.4.9.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
+     <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\LitSolidVertexColor.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\values\attrs.xml" />
+     <None Include="Assets\PlayMaker\Readme.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text (SoftClip).shader" />
+     <None Include="Assets\TK2DROOT\tk2d\Goodies\TexturePacker\Exporter\2dtoolkit\exporter.xml" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\drawable\com_facebook_picker_item_background.xml" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\SolidVertexColor.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 2.shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\layout\com_facebook_picker_search_box.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Dynamic Font (AlphaClip).shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Masked Colored.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 3.shader" />
+     <None Include="Assets\TK2DROOT\tk2dUI\Shaders\DepthMask.shader" />
+     <None Include="Assets\Plugins\FingerGestures\Readme.txt" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\drawable\com_facebook_picker_top_button.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo18.txt" />
+     <None Include="Assets\Plugins\Android\res\values-v11\styles.xml" />
+     <None Include="Assets\Plugins\InAppBillingAndroid\Manifest.xml" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\layout\com_facebook_search_bar_layout.xml" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\layout\com_facebook_picker_title_bar.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (AlphaClip) .shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\values-mdpi\dimens.xml" />
+     <None Include="Assets\Plugins\EtceteraAndroid\Manifest.xml" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\LitPremulVertexColor.shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\layout\com_facebook_friendpickerfragment.xml" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\PremulVertexColor.shader" />
+     <None Include="Assets\TK2DROOT\tk2d_demo\Credits.txt" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\values\drawables.xml" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Header.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (AlphaClip).shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\values-es\strings.xml" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\goodies\PackedTextMesh.shader" />
+     <None Include="Assets\Plugins\SocialNetworkingAndroid\Manifest.xml" />
+     <None Include="Assets\Plugins\Android\res\menu\main.xml" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\Blend2TexVertexColor.shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\drawable\com_facebook_top_button.xml" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\layout\com_facebook_picker_list_row.xml" />
+     <None Include="Assets\sqlitekit\Readme.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (AlphaClip).shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\layout\com_facebook_picker_list_section_header.xml" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\values-ldpi\dimens.xml" />
+     <None Include="Assets\TK2DROOT\tk2dUI\Shaders\DepthMaskSolid.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text (AlphaClip).shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 1.shader" />
+     <None Include="Assets\Plugins\Android\res\values-sw600dp\dimens.xml" />
+     <None Include="Assets\iTweenEditor\README.txt" />
+     <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Dark\Fonts\Nunito24.fnt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\layout\com_facebook_login_activity_layout.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored 3.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored 2.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Dynamic Font (SoftClip).shader" />
+     <None Include="Assets\Plugins\Android\res\values-sw720dp-land\dimens.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 3.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 2.shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\drawable\com_facebook_picker_list_selector_background_transition.xml" />
+     <None Include="Assets\Plugins\Android\res\values-v14\styles.xml" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\resources\BlendVertexColor.shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\drawable\com_facebook_usersettingsfragment_background_gradient.xml" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\drawable\com_facebook_picker_list_selector.xml" />
+     <None Include="Assets\sqlitekit\license.txt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed) (SoftClip).shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored (SoftClip).shader" />
+     <None Include="Assets\Plugins\GoogleCloudMessaging\Manifest.xml" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\LitCutoutVertexColor.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Premultiplied Colored.shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\values\styles.xml" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\drawable\com_facebook_top_background.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Dynamic Font.shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\layout\com_facebook_usersettingsfragment.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored.shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\drawable\com_facebook_button_check.xml" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\drawable\com_facebook_button_blue.xml" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\layout\com_facebook_placepickerfragment_list_row.xml" />
+     <None Include="Assets\TK2DROOT\tk2d\Editor\EditorUtility.shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\layout\com_facebook_tooltip_bubble.xml" />
+     <None Include="Assets\iTween\ReadMe!\ReadMe!.txt" />
+     <None Include="Assets\Plugins\iOS\PyxisVersion.txt" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\layout\com_facebook_picker_checkbox.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text.shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\drawable\com_facebook_loginbutton_silver.xml" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\CutoutVertexColor.shader" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (Packed).shader" />
+     <None Include="Assets\TK2DROOT\tk2d_demo\demobmfont\test.fnt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\layout\com_facebook_picker_title_bar_stub.xml" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\values-hdpi\dimens.xml" />
+     <None Include="Assets\PlayMaker\Resources\PlayMakerAssemblies.txt" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\values-he\strings.xml" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\values-xhdpi\dimens.xml" />
+     <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Font\OldSansBlack\OldSansBlack.fnt" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\LitBlendVertexColor.shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\layout\com_facebook_picker_image.xml" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\layout\com_facebook_picker_activity_circle_row.xml" />
+     <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Dark\Fonts\Nunito16.fnt" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Additive Colored.shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\proguard-project.txt" />
+     <None Include="Assets\TK2DROOT\tk2dUI_demo\Assets\Dark\Fonts\Nunito32.fnt" />
+     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
+     <None Include="Assets\NGUI\Examples\Shaders\Refractive.shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\layout\com_facebook_placepickerfragment.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth.shader" />
+     <None Include="Assets\NGUI\Examples\Atlases\SciFi\SciFi Font - Normal.txt" />
+     <None Include="Assets\Plugins\Android\res\values\strings.xml" />
+     <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Colored (SoftClip).shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\values\colors.xml" />
+     <None Include="Assets\NGUI\Examples\Models\Orc Armor\Orc Armor.shader" />
+     <None Include="Assets\PlayMaker\Versions\readme.txt" />
+     <None Include="Assets\NGUI\Examples\Resources\Localization.txt" />
+     <None Include="Assets\TK2DROOT\tk2d\Shaders\AdditiveVertexColor.shader" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\values-iw\strings.xml" />
+     <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\values\strings.xml" />
+     <None Include="Assets\TK2DROOT\tk2d_demo\democameradata\source\democamerafont.fnt" />
+ <Reference Include="Assets\PlayMaker\PlayMaker">
+ <HintPath>Assets\PlayMaker\PlayMaker.dll</HintPath>
+ </Reference>
+ <Reference Include="Assets\Plugins\P31RestKit">
+ <HintPath>Assets\Plugins\P31RestKit.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
