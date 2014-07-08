@@ -242,6 +242,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: afa13ecb7505948618643d6da1ce74bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationSeconds: 6
   player: {fileID: 100004}
   message: {fileID: 100002}
 --- !u!114 &11400002

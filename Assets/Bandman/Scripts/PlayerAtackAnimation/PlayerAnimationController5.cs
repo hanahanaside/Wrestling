@@ -10,14 +10,9 @@ public class PlayerAnimationController5 : AbstractAnimationController
 	public Transform[] messagePositionArray;
 	public float messageInterval;
 	private int index = 0;
-	private bool isPlaying = false;
 
 	public override void StartAnimation (Transform target)
 	{
-		if(isPlaying){
-			StopCoroutine("AnimationMessage");
-		}
-		isPlaying = true;
 		base.StartAnimation (target);
 		enemy.transform.position = target.position;
 		player.transform.position = target.position;
@@ -27,12 +22,7 @@ public class PlayerAnimationController5 : AbstractAnimationController
 		PlayAnimation (enemy);
 		StartCoroutine("AnimationMessage");
 	}
-	
-	public override void CompleteAnimation ()
-	{
-		isPlaying = false;
-		AnimationListener.AnimationFinished (player.transform);
-	}
+
 
 	private IEnumerator AnimationMessage(){
 		yield return new WaitForSeconds(messageInterval);
@@ -42,7 +32,7 @@ public class PlayerAnimationController5 : AbstractAnimationController
 			StartCoroutine("AnimationMessage");
 		}else {
 			yield return new WaitForSeconds(2.0f);
-			CompleteAnimation();
+			StartCoroutine(WaitForComplete(player.transform));
 		}
 
 	}

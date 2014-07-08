@@ -25,10 +25,6 @@ public class PlayerAnimationController3 :  AbstractAnimationController
 		PlayAnimation(enemyParent);
 		PlayAnimation (enemy);
 		PlayAnimation (message);
-	}
-	
-	public override void CompleteAnimation ()
-	{
-		AnimationListener.AnimationFinished (player.transform);
+		StartCoroutine(WaitForComplete(player.transform));
 	}
 }

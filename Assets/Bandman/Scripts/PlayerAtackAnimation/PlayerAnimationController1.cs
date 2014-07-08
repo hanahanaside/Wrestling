@@ -22,9 +22,8 @@ public class PlayerAnimationController1 : AbstractAnimationController
 		Destroy(target.gameObject);
 		PlayAnimation(enemy);
 		PlayAnimation(message);
+		StartCoroutine(WaitForComplete(player.transform));
 	}
 
-	public override void CompleteAnimation(){
-		AnimationListener.AnimationFinished(player.transform);
-	}
+
 }
