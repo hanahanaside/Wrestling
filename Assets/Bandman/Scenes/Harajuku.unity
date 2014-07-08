@@ -253,7 +253,6 @@ GameObject:
   - 33: {fileID: 19532402}
   - 23: {fileID: 19532401}
   - 114: {fileID: 19532400}
-  - 114: {fileID: 19532399}
   - 61: {fileID: 19532403}
   - 114: {fileID: 19532405}
   - 114: {fileID: 19532406}
@@ -276,51 +275,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2106960786}
---- !u!114 &19532399
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 983844440}
-  m_GameObject: {fileID: 19532397}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &19532400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -524,7 +478,6 @@ GameObject:
   - 33: {fileID: 235410699}
   - 23: {fileID: 235410698}
   - 114: {fileID: 235410697}
-  - 114: {fileID: 235410696}
   - 61: {fileID: 235410695}
   - 114: {fileID: 235410693}
   - 114: {fileID: 235410700}
@@ -618,51 +571,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .930000007, y: 1.71000004}
   m_Center: {x: 0, y: 0}
---- !u!114 &235410696
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1467297774}
-  m_GameObject: {fileID: 235410691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &235410697
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -743,7 +651,6 @@ GameObject:
   - 33: {fileID: 261416550}
   - 23: {fileID: 261416549}
   - 114: {fileID: 261416548}
-  - 114: {fileID: 261416547}
   - 61: {fileID: 261416546}
   - 114: {fileID: 261416544}
   - 114: {fileID: 261416551}
@@ -837,51 +744,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .930000007, y: 1.71000004}
   m_Center: {x: 0, y: 0}
---- !u!114 &261416547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1853902021}
-  m_GameObject: {fileID: 261416542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &261416548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -962,7 +824,6 @@ GameObject:
   - 33: {fileID: 277308521}
   - 23: {fileID: 277308520}
   - 114: {fileID: 277308519}
-  - 114: {fileID: 277308518}
   - 61: {fileID: 277308517}
   - 114: {fileID: 277308515}
   - 114: {fileID: 277308522}
@@ -1056,51 +917,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .930000007, y: 1.71000004}
   m_Center: {x: 0, y: 0}
---- !u!114 &277308518
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 2117304492}
-  m_GameObject: {fileID: 277308513}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &277308519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1281,7 +1097,6 @@ GameObject:
   - 33: {fileID: 318435577}
   - 23: {fileID: 318435576}
   - 114: {fileID: 318435575}
-  - 114: {fileID: 318435574}
   - 61: {fileID: 318435573}
   - 114: {fileID: 318435571}
   - 114: {fileID: 318435578}
@@ -1375,51 +1190,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .930000007, y: 1.71000004}
   m_Center: {x: 0, y: 0}
---- !u!114 &318435574
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1006615088}
-  m_GameObject: {fileID: 318435569}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &318435575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1541,7 +1311,6 @@ GameObject:
   - 33: {fileID: 515288451}
   - 23: {fileID: 515288450}
   - 114: {fileID: 515288449}
-  - 114: {fileID: 515288448}
   - 61: {fileID: 515288447}
   - 114: {fileID: 515288445}
   - 114: {fileID: 515288452}
@@ -1635,51 +1404,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .930000007, y: 1.71000004}
   m_Center: {x: 0, y: 0}
---- !u!114 &515288448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 830784558}
-  m_GameObject: {fileID: 515288443}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &515288449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1790,7 +1514,6 @@ GameObject:
   - 33: {fileID: 559051415}
   - 23: {fileID: 559051414}
   - 114: {fileID: 559051413}
-  - 114: {fileID: 559051412}
   - 61: {fileID: 559051411}
   - 114: {fileID: 559051409}
   - 114: {fileID: 559051416}
@@ -1884,51 +1607,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .930000007, y: 1.71000004}
   m_Center: {x: 0, y: 0}
---- !u!114 &559051412
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1241181586}
-  m_GameObject: {fileID: 559051407}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &559051413
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2108,7 +1786,6 @@ GameObject:
   - 33: {fileID: 673466990}
   - 23: {fileID: 673466989}
   - 114: {fileID: 673466988}
-  - 114: {fileID: 673466987}
   - 61: {fileID: 673466986}
   - 114: {fileID: 673466984}
   - 114: {fileID: 673466991}
@@ -2202,51 +1879,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .930000007, y: 1.71000004}
   m_Center: {x: 0, y: 0}
---- !u!114 &673466987
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 955053797}
-  m_GameObject: {fileID: 673466982}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &673466988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2488,7 +2120,6 @@ GameObject:
   - 33: {fileID: 809774499}
   - 23: {fileID: 809774498}
   - 114: {fileID: 809774497}
-  - 114: {fileID: 809774496}
   - 61: {fileID: 809774495}
   - 114: {fileID: 809774493}
   - 114: {fileID: 809774500}
@@ -2582,51 +2213,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .930000007, y: 1.71000004}
   m_Center: {x: 0, y: 0}
---- !u!114 &809774496
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1175743032}
-  m_GameObject: {fileID: 809774491}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &809774497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2863,7 +2449,6 @@ GameObject:
   - 33: {fileID: 988249944}
   - 23: {fileID: 988249943}
   - 114: {fileID: 988249942}
-  - 114: {fileID: 988249941}
   - 61: {fileID: 988249940}
   - 114: {fileID: 988249938}
   - 114: {fileID: 988249945}
@@ -2957,51 +2542,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .930000007, y: 1.71000004}
   m_Center: {x: 0, y: 0}
---- !u!114 &988249941
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1601593305}
-  m_GameObject: {fileID: 988249936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &988249942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3550,7 +3090,6 @@ GameObject:
   - 33: {fileID: 1300842303}
   - 23: {fileID: 1300842302}
   - 114: {fileID: 1300842301}
-  - 114: {fileID: 1300842300}
   - 61: {fileID: 1300842299}
   - 114: {fileID: 1300842297}
   - 114: {fileID: 1300842304}
@@ -3644,51 +3183,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .930000007, y: 1.71000004}
   m_Center: {x: 0, y: 0}
---- !u!114 &1300842300
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 110902439}
-  m_GameObject: {fileID: 1300842295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &1300842301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3769,7 +3263,6 @@ GameObject:
   - 33: {fileID: 1303146427}
   - 23: {fileID: 1303146426}
   - 114: {fileID: 1303146425}
-  - 114: {fileID: 1303146424}
   - 61: {fileID: 1303146423}
   - 114: {fileID: 1303146421}
   - 114: {fileID: 1303146428}
@@ -3863,51 +3356,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .930000007, y: 1.71000004}
   m_Center: {x: 0, y: 0}
---- !u!114 &1303146424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 2096412925}
-  m_GameObject: {fileID: 1303146419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &1303146425
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4108,7 +3556,6 @@ GameObject:
   - 33: {fileID: 1386352567}
   - 23: {fileID: 1386352566}
   - 114: {fileID: 1386352565}
-  - 114: {fileID: 1386352564}
   - 61: {fileID: 1386352563}
   - 114: {fileID: 1386352561}
   - 114: {fileID: 1386352568}
@@ -4202,51 +3649,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .930000007, y: 1.71000004}
   m_Center: {x: 0, y: 0}
---- !u!114 &1386352564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1086792858}
-  m_GameObject: {fileID: 1386352559}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &1386352565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4379,7 +3781,6 @@ GameObject:
   - 33: {fileID: 1466398248}
   - 23: {fileID: 1466398247}
   - 114: {fileID: 1466398246}
-  - 114: {fileID: 1466398245}
   - 61: {fileID: 1466398244}
   - 114: {fileID: 1466398242}
   - 114: {fileID: 1466398249}
@@ -4473,51 +3874,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .930000007, y: 1.71000004}
   m_Center: {x: 0, y: 0}
---- !u!114 &1466398245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1685759933}
-  m_GameObject: {fileID: 1466398240}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &1466398246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4999,7 +4355,6 @@ GameObject:
   - 33: {fileID: 1923106939}
   - 23: {fileID: 1923106938}
   - 114: {fileID: 1923106937}
-  - 114: {fileID: 1923106936}
   - 61: {fileID: 1923106935}
   - 114: {fileID: 1923106933}
   - 114: {fileID: 1923106940}
@@ -5093,51 +4448,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .930000007, y: 1.71000004}
   m_Center: {x: 0, y: 0}
---- !u!114 &1923106936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1444593597}
-  m_GameObject: {fileID: 1923106931}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &1923106937
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5218,7 +4528,6 @@ GameObject:
   - 33: {fileID: 1964763141}
   - 23: {fileID: 1964763140}
   - 114: {fileID: 1964763139}
-  - 114: {fileID: 1964763138}
   - 61: {fileID: 1964763137}
   - 114: {fileID: 1964763135}
   - 114: {fileID: 1964763142}
@@ -5312,51 +4621,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .930000007, y: 1.71000004}
   m_Center: {x: 0, y: 0}
---- !u!114 &1964763138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1028678620}
-  m_GameObject: {fileID: 1964763133}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &1964763139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5775,7 +5039,6 @@ GameObject:
   - 33: {fileID: 2101002244}
   - 23: {fileID: 2101002243}
   - 114: {fileID: 2101002242}
-  - 114: {fileID: 2101002241}
   - 61: {fileID: 2101002240}
   - 114: {fileID: 2101002238}
   - 114: {fileID: 2101002245}
@@ -5869,51 +5132,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .930000007, y: 1.71000004}
   m_Center: {x: 0, y: 0}
---- !u!114 &2101002241
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 615299362}
-  m_GameObject: {fileID: 2101002236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &2101002242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6077,7 +5295,6 @@ GameObject:
   - 33: {fileID: 2145545767}
   - 23: {fileID: 2145545766}
   - 114: {fileID: 2145545765}
-  - 114: {fileID: 2145545764}
   - 61: {fileID: 2145545763}
   - 114: {fileID: 2145545761}
   - 114: {fileID: 2145545768}
@@ -6171,51 +5388,6 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_Size: {x: .930000007, y: 1.71000004}
   m_Center: {x: 0, y: 0}
---- !u!114 &2145545764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 11400002, guid: fa6ac9332588242c69df8b62264b95d7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1483773760}
-  m_GameObject: {fileID: 2145545759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0401554a0e6f9466db3c1a798d358b8c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tweenName: idle
-  playAutomatically: 1
-  delay: 0
-  type: 17
-  showIconInInspector: 1
-  keys:
-  - y
-  - easetype
-  - looptype
-  - islocal
-  indexes: 00000000000000000000000000000000
-  metadatas:
-  - 
-  - 
-  - 
-  - 
-  ints: 
-  floats:
-  - .200000003
-  bools: 01
-  strings: []
-  vector3s: []
-  colors: []
-  spaces: 
-  easeTypes: 15000000
-  loopTypes: 02000000
-  gameObjects: []
-  transforms: []
-  audioClips: []
-  audioSources: []
-  vector3Arrays: []
-  transformArrays: []
-  paths: []
 --- !u!114 &2145545765
 MonoBehaviour:
   m_ObjectHideFlags: 0
