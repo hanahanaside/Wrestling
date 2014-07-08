@@ -73,6 +73,7 @@
      <Compile Include="Assets\Bandman\Scripts\Main\FinishedEvolutionDialog.cs" />
      <Compile Include="Assets\Bandman\Scripts\Main\InnerFence.cs" />
      <Compile Include="Assets\Bandman\Scripts\Main\MainController.cs" />
+     <Compile Include="Assets\Bandman\Scripts\Main\MainGalController.cs" />
      <Compile Include="Assets\Bandman\Scripts\Main\MainGalGenerator.cs" />
      <Compile Include="Assets\Bandman\Scripts\Main\MainSoundManager.cs" />
      <Compile Include="Assets\Bandman\Scripts\Main\Mover.cs" />

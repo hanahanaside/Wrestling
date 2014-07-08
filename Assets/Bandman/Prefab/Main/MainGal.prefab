@@ -80,11 +80,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bcf05128fbc8416f9ae730504562ce5, type: 3}
+  m_Script: {fileID: 11500000, guid: c6eea2f127a3a4ab4bc97277ae962295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedX: .00499999989
-  speedY: .00499999989
+  speedX: .5
+  speedY: .5
   topY: 2.5
   bottomY: -2.5
   leftX: -2.5
