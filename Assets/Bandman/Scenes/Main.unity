@@ -1734,11 +1734,11 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .400000006
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: f93d133f2b42c4a639a8b89e07fa5dce, type: 3}
   mFont: {fileID: 0}
   mText: )
   mFontSize: 20
-  mFontStyle: 1
+  mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
   mMaxLineCount: 0
@@ -2442,11 +2442,11 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .600000024
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: f93d133f2b42c4a639a8b89e07fa5dce, type: 3}
   mFont: {fileID: 0}
   mText: "/\x03"
   mFontSize: 30
-  mFontStyle: 1
+  mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
   mMaxLineCount: 0
@@ -2750,11 +2750,11 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1.57142854
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: f93d133f2b42c4a639a8b89e07fa5dce, type: 3}
   mFont: {fileID: 0}
   mText: 100000
   mFontSize: 20
-  mFontStyle: 1
+  mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
   mMaxLineCount: 0
@@ -3300,11 +3300,11 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 7.6500001
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 12800000, guid: 70f998cd5704e433d9c9c5b85d3a71ef, type: 3}
+  mTrueTypeFont: {fileID: 12800000, guid: f93d133f2b42c4a639a8b89e07fa5dce, type: 3}
   mFont: {fileID: 0}
   mText: "\u540D\u524D"
   mFontSize: 50
-  mFontStyle: 1
+  mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
   mMaxLineCount: 0
@@ -3639,11 +3639,11 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 2.19230771
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: f93d133f2b42c4a639a8b89e07fa5dce, type: 3}
   mFont: {fileID: 0}
   mText: 1
   mFontSize: 20
-  mFontStyle: 1
+  mFontStyle: 0
   mAlignment: 0
   mEncoding: 0
   mMaxLineCount: 0
@@ -3840,11 +3840,11 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: .466666669
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: f93d133f2b42c4a639a8b89e07fa5dce, type: 3}
   mFont: {fileID: 0}
   mText: (
   mFontSize: -25
-  mFontStyle: 1
+  mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
   mMaxLineCount: 0
@@ -3947,7 +3947,7 @@ MonoBehaviour:
   alwaysOnScreen: 0
   anchorOffset: 0
   renderQueue: 0
-  startingRenderQueue: 3008
+  startingRenderQueue: 3007
   mAlpha: 1
   mClipping: 0
   mClipRange: {x: 0, y: 0, z: 300, w: 200}
@@ -4701,11 +4701,11 @@ MonoBehaviour:
   keepAspectRatio: 0
   aspectRatio: 1.39999998
   keepCrispWhenShrunk: 1
-  mTrueTypeFont: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+  mTrueTypeFont: {fileID: 12800000, guid: f93d133f2b42c4a639a8b89e07fa5dce, type: 3}
   mFont: {fileID: 0}
   mText: "\u4EBA"
   mFontSize: 30
-  mFontStyle: 1
+  mFontStyle: 0
   mAlignment: 0
   mEncoding: 1
   mMaxLineCount: 0
