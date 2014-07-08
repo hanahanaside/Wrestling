@@ -22,6 +22,13 @@ public class PlayerAnimationController2 : AbstractAnimationController
 		Destroy (target.gameObject);
 		PlayAnimation(player);
 		PlayAnimation(message);
-		StartCoroutine(WaitForComplete(player.transform));
+	}
+	
+	public override void CompleteAnimation ()
+	{
+		completeCount++;
+		if (completeCount % 6 == 0) {
+			AnimationListener.AnimationFinished(player.transform);
+		}
 	}
 }

@@ -308,21 +308,27 @@ MonoBehaviour:
   keys:
   - x
   - easetype
-  indexes: 0000000000000000
+  - oncomplete
+  - oncompletetarget
+  indexes: 00000000000000000000000000000000
   metadatas:
+  - 
+  - 
   - 
   - 
   ints: 
   floats:
   - 10
   bools: 
-  strings: []
+  strings:
+  - CompleteAnimation
   vector3s: []
   colors: []
   spaces: 
   easeTypes: 15000000
   loopTypes: 
-  gameObjects: []
+  gameObjects:
+  - {fileID: 100000}
   transforms: []
   audioClips: []
   audioSources: []
@@ -452,7 +458,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99f67750b962443c5a53859a48c3538f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animationSeconds: 3
   player: {fileID: 100006}
   enemy: {fileID: 100002}
   message: {fileID: 100008}
