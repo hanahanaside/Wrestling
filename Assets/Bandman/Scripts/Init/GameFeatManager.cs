@@ -30,7 +30,7 @@ public class GameFeatManager : MonoBehaviour
 #endif
 		} 
 	}
-	
+
 	#if UNITY_ANDROID
 	private void initAndroid(){
 		AndroidJavaClass unityPlayer = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");

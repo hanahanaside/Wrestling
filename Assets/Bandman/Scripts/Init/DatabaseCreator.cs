@@ -24,16 +24,10 @@ public class DatabaseCreator : MonoBehaviour {
 		string baseFilePath = Path.Combine (Application.streamingAssetsPath, databaseFileName);
 		string filePath = Application.persistentDataPath + "/" + databaseFileName;
 		if(File.Exists(filePath)){
-			File.Delete(filePath);
-			StartCoroutine(CreateAndroidDatabase(baseFilePath,filePath));
-		}
-
-/*		if(File.Exists(filePath)){
 			initController.CreatedDatabase();
 		}else {
 			StartCoroutine(CreateAndroidDatabase(baseFilePath,filePath));
 		}
-*/
 #endif
 	}
 
