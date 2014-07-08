@@ -24,6 +24,7 @@ public class PlayerAnimationController19 : AbstractAnimationController{
 		PlayAnimation(enemyParent);
 		PlayAnimation (enemy);
 		PlayAnimation (message);
+		StartCoroutine(WaitForComplete());
 	}
 	
 	public override void CompleteAnimation ()

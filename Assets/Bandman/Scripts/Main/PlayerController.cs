@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 	
 	public GameObject uiRoot;
 	public BackGroundKeeper backGroundKeeper;
+	public int sampleEvolutionPoint;
 	private tk2dSpriteAnimator spriteAnimator;
 	private tk2dSprite mTk2dSprite;
 	private int evolutionPoint = 0;
@@ -65,6 +66,7 @@ public class PlayerController : MonoBehaviour
 		if(isAnimation){
 			return;
 		}
+		GameObject.Find ("StatusBoard").SendMessage ("updateEXPPoint", target.gameObject.tag);
 		isAnimation = true;
 		renderer.enabled = false;
 		animationObject.SetActive (true);
@@ -146,6 +148,7 @@ public class PlayerController : MonoBehaviour
 	{
 		Hashtable playerData = PlayerDataDao.getInstance ().getPlayerData ();
 		evolutionPoint = (int)playerData [PlayerDataDao.EVOLUTION_POINT_FIELD];
+		evolutionPoint = sampleEvolutionPoint;
 	}
 
 	private void StartIdleAnimation ()

@@ -251,12 +251,8 @@ MonoBehaviour:
   - time
   - easetype
   - y
-  - oncomplete
-  - oncompletetarget
-  indexes: 0000000000000000010000000000000000000000
+  indexes: 000000000000000001000000
   metadatas:
-  - 
-  - 
   - 
   - 
   - 
@@ -265,15 +261,13 @@ MonoBehaviour:
   - 1
   - 10
   bools: 
-  strings:
-  - CompleteAnimation
+  strings: []
   vector3s: []
   colors: []
   spaces: 
   easeTypes: 18000000
   loopTypes: 
-  gameObjects:
-  - {fileID: 100000}
+  gameObjects: []
   transforms: []
   audioClips: []
   audioSources: []
@@ -324,12 +318,8 @@ MonoBehaviour:
   - easetype
   - time
   - looptype
-  - oncomplete
-  - oncompletetarget
-  indexes: 000000000000000001000000000000000000000000000000
+  indexes: 00000000000000000100000000000000
   metadatas:
-  - 
-  - 
   - 
   - 
   - 
@@ -339,15 +329,13 @@ MonoBehaviour:
   - .5
   - .5
   bools: 
-  strings:
-  - CompleteAnimation
+  strings: []
   vector3s: []
   colors: []
   spaces: 
   easeTypes: 15000000
   loopTypes: 02000000
-  gameObjects:
-  - {fileID: 100000}
+  gameObjects: []
   transforms: []
   audioClips: []
   audioSources: []
@@ -388,6 +376,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b4b24f936ccb4ab0b2e3f4737d29c82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationSeconds: 4
   player: {fileID: 100002}
   message: {fileID: 100004}
 --- !u!1001 &100100000

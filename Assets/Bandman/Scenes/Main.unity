@@ -4563,8 +4563,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.75499988, y: 2.96999979, z: .300000012}
-  m_Center: {x: .00749999285, y: 0, z: 0}
+  m_Size: {x: 1.30999994, y: 1.97000003, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2030361902
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4578,6 +4578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiRoot: {fileID: 1515704293}
   backGroundKeeper: {fileID: 1027199228}
+  sampleEvolutionPoint: 23
 --- !u!82 &2030361904
 AudioSource:
   m_ObjectHideFlags: 0

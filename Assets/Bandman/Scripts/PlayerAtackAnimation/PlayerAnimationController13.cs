@@ -23,6 +23,7 @@ public class PlayerAnimationController13 : AbstractAnimationController
 		Destroy (target.gameObject);
 		PlayAnimation (enemy);
 		PlayAnimation (message);
+		StartCoroutine(WaitForComplete());
 	}
 	
 	public override void CompleteAnimation ()

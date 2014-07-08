@@ -41,7 +41,7 @@ public class PlayerAnimationController5 : AbstractAnimationController
 		if(index < messagePositionArray.Length-1){
 			StartCoroutine("AnimationMessage");
 		}else {
-			yield return new WaitForSeconds(2.0f);
+			yield return new WaitForSeconds(2.5f);
 			CompleteAnimation();
 		}
 

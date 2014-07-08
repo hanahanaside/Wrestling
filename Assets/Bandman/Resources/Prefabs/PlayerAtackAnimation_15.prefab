@@ -465,6 +465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43507a7fca66d4c25a4153332a099959, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationSeconds: 3.5
   player: {fileID: 100004}
   enemy: {fileID: 100002}
   message: {fileID: 100006}

@@ -18,8 +18,8 @@ public  abstract  class AbstractAnimationController : MonoBehaviour
 		iTweenEvent.GetEvent(animationObject,"Animation").Play();
 	}
 
-	public IEnumerator WaitForComplete(Transform playerPosition){
+	public IEnumerator WaitForComplete(){
 		yield return new WaitForSeconds(animationSeconds);
-		AnimationListener.AnimationFinished(playerPosition.transform);
+		CompleteAnimation();
 	}
 }

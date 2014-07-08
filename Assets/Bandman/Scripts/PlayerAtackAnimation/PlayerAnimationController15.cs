@@ -33,7 +33,7 @@ public class PlayerAnimationController15 : AbstractAnimationController {
 		PlayAnimation(player);
 		PlayAnimation (enemy);
 		PlayAnimation (message);
-		StartCoroutine(WaitAndComplete());
+		StartCoroutine(WaitForComplete());
 	}
 	
 	public override void CompleteAnimation ()
@@ -42,11 +42,6 @@ public class PlayerAnimationController15 : AbstractAnimationController {
 		iTween.Stop(enemy);
 		backGround.transform.localPosition = new Vector3(0,0,0);
 		AnimationListener.AnimationFinished (player.transform);
-	}
-
-	private IEnumerator WaitAndComplete(){
-		yield return new WaitForSeconds(3.0f);
-		CompleteAnimation(); 
 	}
 
 	private Hashtable GetBackGroundAnimation(){

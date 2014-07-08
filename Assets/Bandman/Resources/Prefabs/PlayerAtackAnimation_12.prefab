@@ -468,12 +468,8 @@ MonoBehaviour:
   keys:
   - x
   - time
-  - oncomplete
-  - oncompletetarget
-  indexes: 00000000010000000000000000000000
+  indexes: 0000000001000000
   metadatas:
-  - 
-  - 
   - 
   - 
   ints: 
@@ -481,15 +477,13 @@ MonoBehaviour:
   - -10
   - 3
   bools: 
-  strings:
-  - CompleteAnimation
+  strings: []
   vector3s: []
   colors: []
   spaces: 
   easeTypes: 
   loopTypes: 
-  gameObjects:
-  - {fileID: 100002}
+  gameObjects: []
   transforms: []
   audioClips: []
   audioSources: []
@@ -530,6 +524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7134ce1469b91463aa1e7d6cc328b168, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationSeconds: 3.5
   player: {fileID: 100004}
   enemy: {fileID: 100000}
   enemyParent: {fileID: 100008}
