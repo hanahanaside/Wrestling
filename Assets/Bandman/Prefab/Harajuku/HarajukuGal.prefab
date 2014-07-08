@@ -124,7 +124,7 @@ MonoBehaviour:
   - 
   ints: 
   floats:
-  - 4
+  - 8
   bools: 
   strings:
   - OnExitAnimationFinished
