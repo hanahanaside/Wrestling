@@ -17,10 +17,20 @@ public class PlayerController : MonoBehaviour
 
 	public void PlayVoce ()
 	{
+		if(isAnimation){
+			return;
+		}
 		if (PrefsManager.getInstance ().GetSoundMode () == PrefsManager.SOUND_ON) {
 			Debug.Log("play");
 			audio.PlayOneShot (voiceAudioClip);
+			isAnimation = true;
+			StartCoroutine(CompleteVoice());
 		}
+	}
+
+	private IEnumerator CompleteVoice(){
+		yield return new WaitForSeconds(2.0f);
+		isAnimation = false;
 	}
 
 	void OnEnable ()

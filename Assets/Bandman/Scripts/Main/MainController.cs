@@ -99,12 +99,13 @@ public class MainController : MonoBehaviour
 	private void PlayerTapped ()
 	{
 		Debug.Log ("player tapped"); 
-		GameObject[] galArray = GameObject.FindGameObjectsWithTag ("Gal");
+		playerController.PlayVoce();
+/*		GameObject[] galArray = GameObject.FindGameObjectsWithTag ("Gal");
 		GameObject[] kyabaArray = GameObject.FindGameObjectsWithTag ("Kyaba");
 		if (galArray.Length < 1 && kyabaArray.Length < 1) {
 			playerController.PlayVoce();
 		}
-		
+*/		
 	}
 	
 	private void GalTapped (TapGesture gesture)

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public  abstract  class AbstractAnimationController : MonoBehaviour
 {
-	public float animationSeconds;
+	private float animationSeconds = 3.0f;
 	public abstract void CompleteAnimation ();
 
 	public virtual void StartAnimation (Transform target)
