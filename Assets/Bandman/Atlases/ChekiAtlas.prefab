@@ -41,8 +41,8 @@ MonoBehaviour:
   material: {fileID: 2100000, guid: bc3bfec42e68047518286e1c9f105eb6, type: 2}
   mSprites:
   - name: cheki_1
-    x: 0
-    y: 1443
+    x: 2892
+    y: 3491
     width: 481
     height: 605
     borderLeft: 0
@@ -54,8 +54,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_10
-    x: 2410
-    y: 1443
+    x: 964
+    y: 2885
     width: 481
     height: 605
     borderLeft: 0
@@ -67,8 +67,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_11
-    x: 1446
-    y: 1443
+    x: 482
+    y: 2885
     width: 481
     height: 605
     borderLeft: 0
@@ -80,8 +80,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_12
-    x: 1928
-    y: 231
+    x: 482
+    y: 1673
     width: 481
     height: 605
     borderLeft: 0
@@ -93,8 +93,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_13
-    x: 3374
-    y: 1443
+    x: 0
+    y: 1067
     width: 481
     height: 605
     borderLeft: 0
@@ -106,8 +106,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_14
-    x: 2410
-    y: 231
+    x: 1446
+    y: 3491
     width: 481
     height: 605
     borderLeft: 0
@@ -119,8 +119,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_15
-    x: 964
-    y: 231
+    x: 0
+    y: 461
     width: 481
     height: 605
     borderLeft: 0
@@ -132,8 +132,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_16
-    x: 1446
-    y: 837
+    x: 2410
+    y: 3491
     width: 481
     height: 605
     borderLeft: 0
@@ -146,7 +146,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: cheki_17
     x: 482
-    y: 231
+    y: 3491
     width: 481
     height: 605
     borderLeft: 0
@@ -159,7 +159,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: cheki_18
     x: 3374
-    y: 837
+    y: 2885
     width: 481
     height: 605
     borderLeft: 0
@@ -171,8 +171,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_19
-    x: 2892
-    y: 1443
+    x: 1928
+    y: 2885
     width: 481
     height: 605
     borderLeft: 0
@@ -184,8 +184,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_2
-    x: 1928
-    y: 1443
+    x: 2410
+    y: 2885
     width: 481
     height: 605
     borderLeft: 0
@@ -197,8 +197,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_20
-    x: 0
-    y: 231
+    x: 482
+    y: 461
     width: 481
     height: 605
     borderLeft: 0
@@ -211,7 +211,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: cheki_21
     x: 964
-    y: 837
+    y: 3491
     width: 481
     height: 605
     borderLeft: 0
@@ -223,8 +223,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_22
-    x: 2892
-    y: 837
+    x: 964
+    y: 2279
     width: 481
     height: 605
     borderLeft: 0
@@ -237,7 +237,20 @@ MonoBehaviour:
     paddingBottom: 0
   - name: cheki_23
     x: 482
-    y: 1443
+    y: 2279
+    width: 481
+    height: 605
+    borderLeft: 0
+    borderRight: 0
+    borderTop: 0
+    borderBottom: 0
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: cheki_24
+    x: 0
+    y: 1673
     width: 481
     height: 605
     borderLeft: 0
@@ -249,8 +262,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_3
-    x: 964
-    y: 1443
+    x: 482
+    y: 1067
     width: 481
     height: 605
     borderLeft: 0
@@ -262,8 +275,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_4
-    x: 1446
-    y: 231
+    x: 3374
+    y: 3491
     width: 481
     height: 605
     borderLeft: 0
@@ -276,7 +289,7 @@ MonoBehaviour:
     paddingBottom: 0
   - name: cheki_5
     x: 0
-    y: 837
+    y: 2279
     width: 481
     height: 605
     borderLeft: 0
@@ -288,8 +301,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_6
-    x: 2410
-    y: 837
+    x: 1446
+    y: 2885
     width: 481
     height: 605
     borderLeft: 0
@@ -301,8 +314,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_7
-    x: 3374
-    y: 231
+    x: 1928
+    y: 3491
     width: 481
     height: 605
     borderLeft: 0
@@ -314,8 +327,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_8
-    x: 1928
-    y: 837
+    x: 2892
+    y: 2885
     width: 481
     height: 605
     borderLeft: 0
@@ -327,8 +340,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_9
-    x: 482
-    y: 837
+    x: 0
+    y: 2885
     width: 481
     height: 605
     borderLeft: 0
@@ -340,8 +353,8 @@ MonoBehaviour:
     paddingTop: 0
     paddingBottom: 0
   - name: cheki_question
-    x: 2892
-    y: 231
+    x: 0
+    y: 3491
     width: 481
     height: 605
     borderLeft: 0
