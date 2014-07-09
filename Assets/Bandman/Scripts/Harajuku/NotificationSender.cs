@@ -27,7 +27,7 @@ public class NotificationSender : MonoBehaviour
 		string subTitle = "ジムが練習生だらけです";
 		string tickerText = "ジムが練習生だらけです";
 		string extraData = "extraData";
-		EtceteraAndroid.cancelNotification(notificationId);
+		EtceteraAndroid.cancelAllNotifications();
 	 notificationId = EtceteraAndroid.scheduleNotification(secondsFromNow,title,subTitle,tickerText,extraData);
 		Debug.Log("notificationId = "+notificationId);
 		Debug.Log("secondsFromNow = "+secondsFromNow);

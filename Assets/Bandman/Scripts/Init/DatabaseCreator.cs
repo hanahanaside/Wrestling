@@ -27,6 +27,7 @@ public class DatabaseCreator : MonoBehaviour
 		string filePath = Application.persistentDataPath + "/" + databaseFileName;
 #if UNITY_EDITOR
 		File.Delete(filePath);
+		Debug.Log("delete");
 		baseFilePath = "file://"+Path.Combine (Application.streamingAssetsPath, databaseFileName);
 #endif
 
