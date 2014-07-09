@@ -439,7 +439,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collection: {fileID: 11400000, guid: 91c9efde9620d46aea2b37b4bdd11cb7, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
-  _scale: {x: 1.5, y: 1.5, z: 1.5}
+  _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []
@@ -468,12 +468,8 @@ MonoBehaviour:
   keys:
   - x
   - time
-  - oncomplete
-  - oncompletetarget
-  indexes: 00000000010000000000000000000000
+  indexes: 0000000001000000
   metadatas:
-  - 
-  - 
   - 
   - 
   ints: 
@@ -481,15 +477,13 @@ MonoBehaviour:
   - 10
   - 3
   bools: 
-  strings:
-  - CompleteAnimation
+  strings: []
   vector3s: []
   colors: []
   spaces: 
   easeTypes: 
   loopTypes: 
-  gameObjects:
-  - {fileID: 100002}
+  gameObjects: []
   transforms: []
   audioClips: []
   audioSources: []
@@ -509,7 +503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collection: {fileID: 11400000, guid: 91c9efde9620d46aea2b37b4bdd11cb7, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
-  _scale: {x: 1.5, y: 1.5, z: 1.5}
+  _scale: {x: 1, y: 1, z: 1}
   _spriteId: 55
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []
@@ -530,6 +524,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b8425b68a1da49cd876528a23a152b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationSeconds: 3.5
   player: {fileID: 100004}
   enemy: {fileID: 100000}
   enemyParent: {fileID: 100008}

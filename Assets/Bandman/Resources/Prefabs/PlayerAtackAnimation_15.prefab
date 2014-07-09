@@ -421,7 +421,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collection: {fileID: 11400000, guid: 91c9efde9620d46aea2b37b4bdd11cb7, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
-  _scale: {x: 1.5, y: 1.5, z: 1.5}
+  _scale: {x: 1, y: 1, z: 1}
   _spriteId: 79
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []
@@ -444,7 +444,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collection: {fileID: 11400000, guid: 91c9efde9620d46aea2b37b4bdd11cb7, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
-  _scale: {x: 1.5, y: 1.5, z: 1.5}
+  _scale: {x: 1, y: 1, z: 1}
   _spriteId: 66
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []
@@ -465,6 +465,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43507a7fca66d4c25a4153332a099959, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationSeconds: 3.5
   player: {fileID: 100004}
   enemy: {fileID: 100002}
   message: {fileID: 100006}

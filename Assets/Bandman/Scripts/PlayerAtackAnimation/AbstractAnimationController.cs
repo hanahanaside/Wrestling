@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 public  abstract  class AbstractAnimationController : MonoBehaviour
 {
-
+	public float animationSeconds;
 	public abstract void CompleteAnimation ();
 
 	public virtual void StartAnimation (Transform target)
@@ -18,4 +18,8 @@ public  abstract  class AbstractAnimationController : MonoBehaviour
 		iTweenEvent.GetEvent(animationObject,"Animation").Play();
 	}
 
+	public IEnumerator WaitForComplete(){
+		yield return new WaitForSeconds(animationSeconds);
+		CompleteAnimation();
+	}
 }

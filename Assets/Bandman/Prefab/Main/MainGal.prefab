@@ -70,7 +70,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.28999996, y: 2.55999994, z: 0}
+  m_Size: {x: .930000007, y: 1.67999995, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
@@ -80,11 +80,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bcf05128fbc8416f9ae730504562ce5, type: 3}
+  m_Script: {fileID: 11500000, guid: c6eea2f127a3a4ab4bc97277ae962295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedX: .00499999989
-  speedY: .00499999989
+  speedX: .100000001
+  speedY: .100000001
   topY: 2.5
   bottomY: -2.5
   leftX: -2.5
@@ -116,7 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collection: {fileID: 11400000, guid: 91c9efde9620d46aea2b37b4bdd11cb7, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
-  _scale: {x: 1.5, y: 1.5, z: 0}
+  _scale: {x: 1, y: 1, z: 1}
   _spriteId: 77
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []

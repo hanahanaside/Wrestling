@@ -82,7 +82,6 @@ public class MainController : MonoBehaviour
 			if (tag == "Player") {
 				PlayerTapped ();
 			} else if (tag == "Gal" || tag == "Kyaba") {
-				GameObject.Find ("StatusBoard").SendMessage ("updateEXPPoint", tag);
 				GalTapped (gesture);
 			}
 		} else {

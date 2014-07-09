@@ -39,7 +39,7 @@ public class HarajukuGalGenerator : MonoBehaviour
 			int galDifference = maxGalSize - currentGalSize;
 			double addSeconds = galDifference * 9;
 			Debug.Log ("addSeconds = " + addSeconds);
-			notificationSender.ScheduleLocalNotification(addSeconds);
+			notificationSender.ScheduleLocalNotification (addSeconds);
 		}
 	}
 
@@ -47,11 +47,11 @@ public class HarajukuGalGenerator : MonoBehaviour
 	{
 		Hashtable playerData = PlayerDataDao.getInstance ().getPlayerData ();
 		int harajukuGalSize = (int)playerData [PlayerDataDao.HARAJUKU_GAL_SIZE];
-		string exitTime = PrefsManager.getInstance().GetExitTime();
+		string exitTime = PrefsManager.getInstance ().GetExitTime ();
 		
 		Debug.Log ("exitTime = " + exitTime);
 		if (exitTime != "") {
-			DateTime exitDateTime = DateTime.Parse(exitTime);
+			DateTime exitDateTime = DateTime.Parse (exitTime);
 			DateTime restartDateTime = DateTime.Now;
 			Debug.Log ("restartDateTime = " + restartDateTime);
 

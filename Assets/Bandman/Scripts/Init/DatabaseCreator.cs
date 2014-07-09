@@ -2,13 +2,15 @@
 using System.IO;
 using System.Collections;
 
-public class DatabaseCreator : MonoBehaviour {
+public class DatabaseCreator : MonoBehaviour
+{
 
 	public string databaseFileName;
 	public InitController initController;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+	{
 		#if UNITY_IPHONE
 		string baseFilePath = Application.streamingAssetsPath + "/" + databaseFileName;
 		string filePath = Application.persistentDataPath + "/" + databaseFileName;
@@ -23,11 +25,19 @@ public class DatabaseCreator : MonoBehaviour {
 		#if UNITY_ANDROID
 		string baseFilePath = Path.Combine (Application.streamingAssetsPath, databaseFileName);
 		string filePath = Application.persistentDataPath + "/" + databaseFileName;
+#if UNITY_EDITOR
+		File.Delete(filePath);
+		baseFilePath = "file://"+Path.Combine (Application.streamingAssetsPath, databaseFileName);
+#endif
+
+
+
 		if(File.Exists(filePath)){
 			initController.CreatedDatabase();
 		}else {
 			StartCoroutine(CreateAndroidDatabase(baseFilePath,filePath));
 		}
+
 #endif
 	}
 

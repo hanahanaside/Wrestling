@@ -21,13 +21,13 @@ public class PlayerAnimationController10 :AbstractAnimationController
 		Destroy (target.gameObject);
 		PlayAnimation (player);
 		PlayAnimation (message);
+		StartCoroutine(WaitForComplete());
 	}
 	
 	public override void CompleteAnimation ()
 	{
-		completeCount++;
-		if(completeCount % 5==0){
+
 			AnimationListener.AnimationFinished (player.transform);
-		}
+
 	}
 }

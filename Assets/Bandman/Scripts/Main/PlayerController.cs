@@ -65,6 +65,7 @@ public class PlayerController : MonoBehaviour
 		if(isAnimation){
 			return;
 		}
+		GameObject.Find ("StatusBoard").SendMessage ("updateEXPPoint", target.gameObject.tag);
 		isAnimation = true;
 		renderer.enabled = false;
 		animationObject.SetActive (true);

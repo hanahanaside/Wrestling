@@ -368,7 +368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collection: {fileID: 11400000, guid: 91c9efde9620d46aea2b37b4bdd11cb7, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
-  _scale: {x: 1.5, y: 1.5, z: 1.5}
+  _scale: {x: 1, y: 1, z: 1}
   _spriteId: 0
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []
@@ -391,7 +391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collection: {fileID: 11400000, guid: 91c9efde9620d46aea2b37b4bdd11cb7, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
-  _scale: {x: 1.5, y: 1.5, z: 1.5}
+  _scale: {x: 1, y: 1, z: 1}
   _spriteId: 70
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []
@@ -412,6 +412,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ed16bea544864f09b2a95ce785a517b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationSeconds: 3.5
   player: {fileID: 100004}
   enemy: {fileID: 100002}
   message: {fileID: 100006}
@@ -435,13 +436,9 @@ MonoBehaviour:
   - y
   - easetype
   - looptype
-  - oncomplete
-  - oncompletetarget
   - time
-  indexes: 000000000000000000000000000000000000000001000000
+  indexes: 00000000000000000000000001000000
   metadatas:
-  - 
-  - 
   - 
   - 
   - 
@@ -451,15 +448,13 @@ MonoBehaviour:
   - .5
   - .100000001
   bools: 
-  strings:
-  - CompleteAnimation
+  strings: []
   vector3s: []
   colors: []
   spaces: 
   easeTypes: 15000000
   loopTypes: 02000000
-  gameObjects:
-  - {fileID: 100000}
+  gameObjects: []
   transforms: []
   audioClips: []
   audioSources: []

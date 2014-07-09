@@ -5,17 +5,14 @@ public class HarajukuGal : MonoBehaviour
 {
 
 	private Vector3 startPosition;
-	private iTweenEvent idleEvent;
 
 	void Start ()
 	{ 
 		startPosition = new Vector3 (transform.position.x, transform.position.y, transform.position.z);
-		idleEvent = iTweenEvent.GetEvent (gameObject, "idle");
 	}
 
 	void StartExitAnimation ()
 	{
-		idleEvent.Stop ();
 		iTweenEvent exitEvent = iTweenEvent.GetEvent (gameObject, "exit");
 		exitEvent.Start ();
 	}
@@ -31,7 +28,6 @@ public class HarajukuGal : MonoBehaviour
 		mainGalSize++;
 		PlayerDataDao.getInstance ().UpdateMainGalSize (mainGalSize);
 		transform.position = startPosition;
-		idleEvent.Start ();
 		gameObject.SetActive (false);
 	}
 }
