@@ -266,12 +266,8 @@ MonoBehaviour:
   - easetype
   - time
   - looptype
-  - oncomplete
-  - oncompletetarget
-  indexes: 000000000000000001000000000000000000000000000000
+  indexes: 00000000000000000100000000000000
   metadatas:
-  - 
-  - 
   - 
   - 
   - 
@@ -281,15 +277,13 @@ MonoBehaviour:
   - .5
   - .5
   bools: 
-  strings:
-  - CompleteAnimation
+  strings: []
   vector3s: []
   colors: []
   spaces: 
   easeTypes: 15000000
   loopTypes: 02000000
-  gameObjects:
-  - {fileID: 100000}
+  gameObjects: []
   transforms: []
   audioClips: []
   audioSources: []
@@ -339,12 +333,8 @@ MonoBehaviour:
   - time
   - easetype
   - y
-  - oncomplete
-  - oncompletetarget
-  indexes: 0000000000000000010000000000000000000000
+  indexes: 000000000000000001000000
   metadatas:
-  - 
-  - 
   - 
   - 
   - 
@@ -353,15 +343,13 @@ MonoBehaviour:
   - 1
   - 10
   bools: 
-  strings:
-  - CompleteAnimation
+  strings: []
   vector3s: []
   colors: []
   spaces: 
   easeTypes: 18000000
   loopTypes: 
-  gameObjects:
-  - {fileID: 100000}
+  gameObjects: []
   transforms: []
   audioClips: []
   audioSources: []

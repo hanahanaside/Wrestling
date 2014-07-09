@@ -56,7 +56,19 @@ public class HarajukuController : MonoBehaviour
 			OnBackButtonClick ();
 		}
 		if (buttonName == "CPIButton") {
+#if UNITY_IPHONE
+			if(ReleaseChecker.CheckOnSale()){
+				GameFeatManager.instance.loadGF();
+			}else {
+				string title = "\u6e96\u5099\u4e2d\u3067\u3059";
+				string message = "\u5b8c\u6210\u307e\u3067\u3061\u3087\u3063\u3068\u5f85\u3063\u3066\u304f\u308c\u3088\u306a";
+				string[] buttons = {"OK"};
+				EtceteraBinding.showAlertWithTitleMessageAndButtons(title,message,buttons);
+			}
+#endif
+#if UNITY_ANDROID
 			GameFeatManager.instance.loadGF();
+#endif
 		}
 		
 	}

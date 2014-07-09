@@ -1529,7 +1529,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 128366894}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -58.1818771, y: -252.727432, z: 0}
+  m_LocalPosition: {x: -50.8234406, y: -251.183853, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1515704294}
@@ -1871,7 +1871,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 245919213}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 61.8180084, y: -252.727432, z: 0}
+  m_LocalPosition: {x: 56.2688828, y: -251.183853, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1515704294}
@@ -2036,7 +2036,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 525191027}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -119.999886, y: 301.818115, z: 0}
+  m_LocalPosition: {x: -107.092323, y: 301.964722, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1374374821}
@@ -2153,7 +2153,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 630691636}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 143.636292, y: 309.090912, z: 0}
+  m_LocalPosition: {x: 130.68924, y: 309.219116, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1515704294}
@@ -2400,7 +2400,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 897284382}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13, y: -3, z: 0}
+  m_LocalPosition: {x: -15.1999998, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1703477116}
@@ -2708,7 +2708,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1038055053}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 18, y: -2, z: 0}
+  m_LocalPosition: {x: 19, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1703477116}
@@ -2742,17 +2742,17 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 44
+  mWidth: 45
   mHeight: 28
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 1.57142854
+  aspectRatio: 1.60714281
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f93d133f2b42c4a639a8b89e07fa5dce, type: 3}
   mFont: {fileID: 0}
-  mText: 100000
+  mText: "600\x03"
   mFontSize: 20
   mFontStyle: 0
   mAlignment: 0
@@ -2887,7 +2887,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1201686024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 178.181763, y: -252.727432, z: 0}
+  m_LocalPosition: {x: 159.731262, y: -251.183853, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1515704294}
@@ -3118,7 +3118,7 @@ MonoBehaviour:
   viewportRegion: {x: 0, y: 0, z: 100, w: 100}
   zoomFactor: 1
   forceResolutionInEditor: 1
-  forceResolution: {x: 480, y: 800}
+  forceResolution: {x: 640, y: 960}
 --- !u!20 &1255210572
 Camera:
   m_ObjectHideFlags: 3
@@ -3292,13 +3292,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 153
+  mWidth: 163
   mHeight: 20
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 7.6500001
+  aspectRatio: 8.14999962
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f93d133f2b42c4a639a8b89e07fa5dce, type: 3}
   mFont: {fileID: 0}
@@ -3392,7 +3392,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1402878181}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -167.272675, y: -252.727432, z: 0}
+  m_LocalPosition: {x: -150.655518, y: -251.183853, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1515704294}
@@ -3597,7 +3597,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1498414927}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46, y: -2, z: 0}
+  m_LocalPosition: {x: -49.4000015, y: -2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1703477116}
@@ -3631,13 +3631,13 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
-  mWidth: 57
+  mWidth: 45
   mHeight: 26
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 2.19230771
+  aspectRatio: 1.73076928
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f93d133f2b42c4a639a8b89e07fa5dce, type: 3}
   mFont: {fileID: 0}
@@ -4013,7 +4013,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 160, y: 26, z: 0}
+  m_Size: {x: 160, y: 25, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1720498934
 MonoBehaviour:
@@ -4046,12 +4046,12 @@ MonoBehaviour:
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 4
   mWidth: 160
-  mHeight: 26
+  mHeight: 25
   mDepth: 1
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: 6.15384626
+  aspectRatio: 6.4000001
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
@@ -4089,7 +4089,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1777638876}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: .18144989, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1515704294}
@@ -4103,7 +4103,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 480, y: 720, z: 0}
+  m_Size: {x: 432, y: 720, z: 0}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1777638879
 MonoBehaviour:
@@ -4135,13 +4135,13 @@ MonoBehaviour:
   updateAnchors: 0
   mColor: {r: 1, g: 1, b: 1, a: .00392156886}
   mPivot: 4
-  mWidth: 480
+  mWidth: 432
   mHeight: 720
   mDepth: 1
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: .666666687
+  aspectRatio: .600000024
   mType: 0
   mFillDirection: 4
   mFillAmount: 1

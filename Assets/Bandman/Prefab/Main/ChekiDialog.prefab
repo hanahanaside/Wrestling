@@ -353,8 +353,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 58, y: 109, z: 0}
-  m_Center: {x: -29, y: 54.5, z: 0}
+  m_Size: {x: 50, y: 94, z: 0}
+  m_Center: {x: -25, y: 47, z: 0}
 --- !u!65 &6500002
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -389,8 +389,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 58, y: 109, z: 0}
-  m_Center: {x: 29, y: 54.5, z: 0}
+  m_Size: {x: 50, y: 94, z: 0}
+  m_Center: {x: 25, y: 47, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -482,8 +482,8 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 8
-  mWidth: 58
-  mHeight: 109
+  mWidth: 50
+  mHeight: 94
   mDepth: 3
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
@@ -793,7 +793,7 @@ MonoBehaviour:
   bottomType: 1
   topType: 1
   mAtlas: {fileID: 11400000, guid: 5e765551ef08743bbaff06037221f7f0, type: 2}
-  mSpriteName: cheki_9
+  mSpriteName: cheki_16
   mFillCenter: 1
 --- !u!114 &11400024
 MonoBehaviour:
@@ -1105,8 +1105,8 @@ MonoBehaviour:
   updateAnchors: 1
   mColor: {r: 1, g: 1, b: 1, a: 1}
   mPivot: 6
-  mWidth: 58
-  mHeight: 109
+  mWidth: 50
+  mHeight: 94
   mDepth: 2
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
