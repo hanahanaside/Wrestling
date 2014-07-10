@@ -24,7 +24,14 @@ public class MainController : MonoBehaviour
 		//AppC
 		if (buttonName == "GameFeatButton") {
 			#if UNITY_IPHONE
-			APUnityPlugin.ShowAppliPromotionWall();
+			if(ReleaseChecker.CheckOnSale()){
+				APUnityPlugin.ShowAppliPromotionWall();
+			}else {
+				string title = "\u6e96\u5099\u4e2d\u3067\u3059";
+				string message = "\u5b8c\u6210\u307e\u3067\u3061\u3087\u3063\u3068\u5f85\u3063\u3066\u304f\u308c\u3088\u306a";
+				string[] buttons = {"OK"};
+				EtceteraBinding.showAlertWithTitleMessageAndButtons(title,message,buttons);
+			}
 #endif
 
 #if UNITY_ANDROID
@@ -92,12 +99,13 @@ public class MainController : MonoBehaviour
 	private void PlayerTapped ()
 	{
 		Debug.Log ("player tapped"); 
-		GameObject[] galArray = GameObject.FindGameObjectsWithTag ("Gal");
+		playerController.PlayVoce();
+/*		GameObject[] galArray = GameObject.FindGameObjectsWithTag ("Gal");
 		GameObject[] kyabaArray = GameObject.FindGameObjectsWithTag ("Kyaba");
 		if (galArray.Length < 1 && kyabaArray.Length < 1) {
 			playerController.PlayVoce();
 		}
-		
+*/		
 	}
 	
 	private void GalTapped (TapGesture gesture)

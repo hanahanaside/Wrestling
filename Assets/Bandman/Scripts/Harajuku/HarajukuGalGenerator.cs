@@ -62,6 +62,7 @@ public class HarajukuGalGenerator : MonoBehaviour
 		
 		
 		for (int i =0; i<harajukuGalSize; i++) {
+			Debug.Log("size = "+harajukuGalSize);
 			GameObject gameObject = myList [i];
 			gameObject.SetActive (true);
 		}

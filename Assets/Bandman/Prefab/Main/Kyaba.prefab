@@ -58,7 +58,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.03842402, z: 0}
+  m_LocalPosition: {x: 0, y: .709999979, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -143,7 +143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collection: {fileID: 11400000, guid: 91c9efde9620d46aea2b37b4bdd11cb7, type: 2}
   _color: {r: 1, g: 1, b: 1, a: 1}
-  _scale: {x: 2, y: 2, z: 2}
+  _scale: {x: 1.5, y: 1.5, z: 1.5}
   _spriteId: 80
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []
@@ -161,13 +161,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6bcf05128fbc8416f9ae730504562ce5, type: 3}
+  m_Script: {fileID: 11500000, guid: c6eea2f127a3a4ab4bc97277ae962295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speedX: .00100000005
-  speedY: .00100000005
-  topY: 3
-  bottomY: -2.79999995
+  speedX: .100000001
+  speedY: .100000001
+  topY: 2.5
+  bottomY: -2.5
   leftX: -2.5
   rightX: 2.5
 --- !u!114 &11400004
@@ -196,8 +196,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collection: {fileID: 11400000, guid: 91c9efde9620d46aea2b37b4bdd11cb7, type: 2}
-  _color: {r: .669117689, g: .511678219, b: .511678219, a: 1}
-  _scale: {x: 1.5, y: 1.5, z: 0}
+  _color: {r: 1, g: 1, b: 1, a: 1}
+  _scale: {x: 1, y: 1, z: 1}
   _spriteId: 77
   boxCollider2D: {fileID: 0}
   polygonCollider2D: []

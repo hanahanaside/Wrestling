@@ -49,6 +49,7 @@
      <Compile Include="Assets\Bandman\Scripts\Common\AlertDialog.cs" />
      <Compile Include="Assets\Bandman\Scripts\Common\PrefsManager.cs" />
      <Compile Include="Assets\Bandman\Scripts\Common\RecommendAppDialog.cs" />
+     <Compile Include="Assets\Bandman\Scripts\Common\ReleaseChecker.cs" />
      <Compile Include="Assets\Bandman\Scripts\Dao\CharactorListDao.cs" />
      <Compile Include="Assets\Bandman\Scripts\Dao\PlayerDataDao.cs" />
      <Compile Include="Assets\Bandman\Scripts\Ending\EndingController.cs" />

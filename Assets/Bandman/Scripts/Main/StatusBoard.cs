@@ -47,15 +47,17 @@ public class StatusBoard : MonoBehaviour
 		float progress = (float)currentExpPoint / (float)nextExpPoint;
 		mExpProgressBar.value = progress;
 
-/*		if (currentExpPoint >= nextExpPoint) {
-			GameObject player = GameObject.Find ("Player");
-			player.SendMessage ("StartEvolution");
-		}
-*/	
 		if (currentExpPoint >= 3) {
 			GameObject player = GameObject.Find ("Player");
 			player.SendMessage ("StartEvolution");
 		}
+
+
+/*		if (currentExpPoint >= nextExpPoint) {
+			GameObject player = GameObject.Find ("Player");
+			player.SendMessage ("StartEvolution");
+		}
+*/
 	}
 
 	private void FinishEvolution (int evolutionPoint)
@@ -72,8 +74,8 @@ public class StatusBoard : MonoBehaviour
 		mExpProgressBar.value = 0;
 		PrefsManager.getInstance ().SaveShareName (mNameLabel.text);
 		PrefsManager.getInstance ().SaveShareImageId (evolutionPoint);
-		FinishedEvolutionDialog dialog = Instantiate(finishedEvolutionDialogPrefab) as FinishedEvolutionDialog;
-		dialog.Show(mNameLabel.text);
+		FinishedEvolutionDialog dialog = Instantiate (finishedEvolutionDialogPrefab) as FinishedEvolutionDialog;
+		dialog.Show (mNameLabel.text);
 
 	}
 }

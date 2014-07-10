@@ -28,6 +28,12 @@ public class NotificationListenerIOS : MonoBehaviour
 		DontDestroyOnLoad(gameObject);
 	}
 
+	void OnApplicationPause(bool pauseStatus) {
+		if(!pauseStatus){
+			ClearNotifications();
+		}
+	}
+
 	void localNotificationWasReceivedEvent (IDictionary notification)
 	{
 		Debug.Log ("localNotificationWasReceivedEvent");
