@@ -35,6 +35,5 @@ public class MainSoundManager : MonoBehaviour
 		GameObject.Find ("BGM").audio.mute = muteState;
 		GameObject.Find ("MoneySound").audio.mute = muteState;
 		GameObject.Find ("Evolution").audio.mute = muteState;
-		GameObject.Find ("LevelUp").audio.mute = muteState;
 	}
 }

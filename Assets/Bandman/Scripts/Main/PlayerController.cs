@@ -111,16 +111,37 @@ public class PlayerController : MonoBehaviour
 	{
 		yield return new WaitForSeconds (4);
 		GameObject.Find ("Evolution").audio.Play ();
-		float interval = 0.7f;
-		for (int i = 0; i<20; i++) {
-			mTk2dSprite.SetSprite ("player" + (evolutionPoint + 1) + "_a");
-			yield return new WaitForSeconds (interval - i / 8.0f);
-			mTk2dSprite.SetSprite ("player" + evolutionPoint + "_a");
-			yield return new WaitForSeconds (interval - i / 8.0f);
+		for (int i = 0; i<5; i++) {
+			renderer.enabled = false;
+			yield return new WaitForSeconds (0.82f);
+			renderer.enabled = true;
+			yield return new WaitForSeconds (0.82f);
 		}
+		Debug.Log("step2");
+		for (int i = 0; i<8; i++) {
+			renderer.enabled = false;
+			yield return new WaitForSeconds (0.1f);
+			renderer.enabled = true;
+			yield return new WaitForSeconds (0.1f);
+		}
+		Debug.Log("step3");
+		int loopCount = 0;
+#if UNITY_IPHONE
+		loopCount = 32;
+#endif
+#if UNITY_ANDROID
+		loopCount = 70;
+#endif
+		for (int i = 0; i<loopCount; i++) {
+			renderer.enabled = false;
+			yield return new WaitForSeconds (0.01f);
+			renderer.enabled = true;
+			yield return new WaitForSeconds (0.01f);
+		}
+
 		if (evolutionPoint >= 23) {
 			mTk2dSprite.SetSprite ("player" + (evolutionPoint + 1) + "_a");
-			yield return new WaitForSeconds (3);
+			yield return new WaitForSeconds (6.0f);
 			Application.LoadLevel ("Ending");
 		} else {
 			PlayerDataDao.getInstance ().UpdateEvolutionPoint (evolutionPoint + 1);
@@ -131,9 +152,7 @@ public class PlayerController : MonoBehaviour
 			animationObject.SetActive (false);
 			GameObject.Find ("BackGround").GetComponent<MeshRenderer> ().enabled = true;
 			StartIdleAnimation ();
-			yield return new WaitForSeconds (2);
-			GameObject.Find ("LevelUp").audio.Play ();
-			yield return new WaitForSeconds (4.0f);
+			yield return new WaitForSeconds (6.0f);
 			uiRoot.SetActive (true);
 			GameObject.Find ("StatusBoard").SendMessage ("FinishEvolution", evolutionPoint);
 			isEvolution = false;

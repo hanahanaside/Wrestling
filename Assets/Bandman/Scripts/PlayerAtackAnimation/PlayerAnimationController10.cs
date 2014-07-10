@@ -7,11 +7,9 @@ public class PlayerAnimationController10 :AbstractAnimationController
 	public GameObject player;
 	public GameObject enemy;
 	public GameObject message;
-	private int completeCount;
 	
 	public override void StartAnimation (Transform target)
 	{
-		completeCount = 0;
 		base.StartAnimation (target);
 		enemy.transform.position = target.position;
 		player.transform.position = target.position;

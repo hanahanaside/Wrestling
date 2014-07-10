@@ -28,7 +28,7 @@ public class MainController : MonoBehaviour
 				APUnityPlugin.ShowAppliPromotionWall();
 			}else {
 				string title = "\u6e96\u5099\u4e2d\u3067\u3059";
-				string message = "\u5b8c\u6210\u307e\u3067\u3061\u3087\u3063\u3068\u5f85\u3063\u3066\u304f\u308c\u3088\u306a";
+				string message = "\u8fd1\u65e5\u516c\u958b!!";
 				string[] buttons = {"OK"};
 				EtceteraBinding.showAlertWithTitleMessageAndButtons(title,message,buttons);
 			}
@@ -56,8 +56,8 @@ public class MainController : MonoBehaviour
 #endif
 
 #if UNITY_ANDROID
-			string title = "準備中です";
-			string message = "完成まで待ってくれよな ";
+			string title = "\u6e96\u5099\u4e2d\u3067\u3059";
+			string message = "\u8fd1\u65e5\u516c\u958b!!";
 			EtceteraAndroid.showAlert(title,message,"OK");
 #endif
 		}
