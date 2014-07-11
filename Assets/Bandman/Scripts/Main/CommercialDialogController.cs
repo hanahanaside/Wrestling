@@ -6,7 +6,8 @@ public class CommercialDialogController : MonoBehaviour
 {
 	public string[] skuArray;
 	public string encodePublicKey;
-	public bool isDialogShowing{get;set;}
+
+	public bool isDialogShowing{ get; set; }
 
 	void Awake ()
 	{
@@ -17,11 +18,6 @@ public class CommercialDialogController : MonoBehaviour
 
 	void Start ()
 	{
-#if UNITY_IPHONE
-		if(ProductListKeeper.instance.productList == null ){
-			ProductListKeeper.instance.requestProductData();
-		}
-#endif
 
 		#if UNITY_ANDROID
 		GoogleIAB.queryInventory( skuArray );
@@ -32,22 +28,31 @@ public class CommercialDialogController : MonoBehaviour
 	{
 		Debug.Log ("OnButtonClick");
 
-		if(isDialogShowing){
+		if (isDialogShowing) {
 			return;
 		}
+
+
 
 		string buttonName = UIButton.current.name;
 		Debug.Log (buttonName);
 		if (buttonName == "BackButton") {
-			GameObject.Find("MainController").GetComponent<MainController>().isDialogShowing = false;
-			GameObject.Find("UIFence").SetActive(false);
+			GameObject.Find ("MainController").GetComponent<MainController> ().isDialogShowing = false;
+			GameObject.Find ("UIFence").SetActive (false);
 			Destroy (gameObject.transform.parent.gameObject);
 			return;
 		}
 
-#if UNITY_IPHONE
-		PurchaseProduct (buttonName);
-#endif
+		#if UNITY_IPHONE
+		if(ProductListKeeper.instance.productList == null ){
+			string title = "\u901a\u4fe1\u30a8\u30e9\u30fc";
+			string message = "\u30a2\u30a4\u30c6\u30e0\u306e\u53d6\u5f97\u306b\u5931\u6557\u3057\u307e\u3057\u305f";
+			string[] buttons = {"OK"};
+			EtceteraBinding.showAlertWithTitleMessageAndButtons(title,message,buttons);
+		}else {
+			PurchaseProduct (buttonName);
+		}
+		#endif
 
 #if UNITY_ANDROID
 		PurchaseSku(buttonName);
@@ -75,10 +80,12 @@ public class CommercialDialogController : MonoBehaviour
 		}
 		List<StoreKitProduct> productList = ProductListKeeper.instance.productList;
 		StoreKitProduct product = productList [productIndex];
-		Debug.Log ("preparing to purchase product: " + product.productIdentifier);
-		StoreKitBinding.purchaseProduct (product.productIdentifier, 1);
-		EtceteraBinding.showBezelActivityViewWithLabel("Loading");
-		isDialogShowing = true;
+
+			Debug.Log ("preparing to purchase product: " + product.productIdentifier);
+			StoreKitBinding.purchaseProduct (product.productIdentifier, 1);
+			EtceteraBinding.showBezelActivityViewWithLabel("Loading");
+			isDialogShowing = true;
+
 	}
 #endif
 
