@@ -59,10 +59,13 @@ public class HarajukuGalGenerator : MonoBehaviour
 			harajukuGalSize += (int)(sleepTime / interval);
 			Debug.Log ("sleepTime = " + sleepTime);
 		}
-		
+
+		if(harajukuGalSize >maxGalSize){
+			harajukuGalSize = maxGalSize;
+		}
+
 		
 		for (int i =0; i<harajukuGalSize; i++) {
-			Debug.Log("size = "+harajukuGalSize);
 			GameObject gameObject = myList [i];
 			gameObject.SetActive (true);
 		}
