@@ -2667,7 +2667,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f93d133f2b42c4a639a8b89e07fa5dce, type: 3}
   mFont: {fileID: 0}
-  mText: "600\x03"
+  mText: 
   mFontSize: 20
   mFontStyle: 0
   mAlignment: 0
@@ -3217,7 +3217,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f93d133f2b42c4a639a8b89e07fa5dce, type: 3}
   mFont: {fileID: 0}
-  mText: "\u540D\u524D"
+  mText: 
   mFontSize: 50
   mFontStyle: 0
   mAlignment: 0
@@ -3555,7 +3555,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 12800000, guid: f93d133f2b42c4a639a8b89e07fa5dce, type: 3}
   mFont: {fileID: 0}
-  mText: 1
+  mText: 
   mFontSize: 20
   mFontStyle: 0
   mAlignment: 0
