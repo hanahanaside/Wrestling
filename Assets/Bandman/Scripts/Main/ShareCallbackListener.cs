@@ -64,10 +64,14 @@ public class ShareCallbackListener : MonoBehaviour
 	}
 
 	private void ShowErrorDialog(){
-		#if UNITY_ANDROID
 		string title = "\u30c4\u30a4\u30fc\u30c8\u5931\u6557";
 		string message = "\u518d\u5ea6\u304a\u3053\u306a\u3063\u3066\u304f\u3060\u3055\u3044 ";
+		#if UNITY_ANDROID
 		EtceteraAndroid.showAlert(title,message,"OK");
+#endif
+#if UNITY_IPHONE
+		string[] buttons = {"OK"};
+		EtceteraBinding.showAlertWithTitleMessageAndButtons(title,message,buttons);
 #endif
 	}
 	
@@ -86,6 +90,10 @@ public class ShareCallbackListener : MonoBehaviour
 
 	void tweetSheetCompletedEvent (bool didSucceed)
 	{
+		if(Application.internetReachability == NetworkReachability.NotReachable){
+			ShowErrorDialog();
+			return;
+		}
 		#if UNITY_ANDROID
 		EtceteraAndroid.hideProgressDialog();
 		#endif

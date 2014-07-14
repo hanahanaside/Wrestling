@@ -6,11 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Test.unity
+    path: Assets/Bandman/Scenes/Test.unity
   - enabled: 1
     path: Assets/Bandman/Scenes/Init.unity
-  - enabled: 1
-    path: Assets/Bandman/Scenes/Splash.unity
   - enabled: 1
     path: Assets/Bandman/Scenes/Tutorial.unity
   - enabled: 1
@@ -24,7 +22,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Bandman/Scenes/Ending.unity
   - enabled: 0
+    path: Assets/Bandman/Scenes/Splash.unity
+  - enabled: 0
     path: Assets/Bandman/Scenes/Tweet.unity
+  - enabled: 0
+    path: Assets/Test.unity
   - enabled: 0
     path: Assets/Bandman/Scenes/Test.unity
   - enabled: 0

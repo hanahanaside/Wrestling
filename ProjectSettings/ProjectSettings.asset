@@ -73,7 +73,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  iPhoneBundleIdentifier: jp.co.hnut.wrestling
+  iPhoneBundleIdentifier: com.marina.wrestling
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   productGUID: 745c3f3094e4b4d1cb50de5ba85aa9f6

@@ -102,7 +102,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 18091872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 173.53833, y: -230.769241, z: 0}
+  m_LocalPosition: {x: 191.999817, y: -251.076904, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1272088303}
@@ -239,7 +239,7 @@ MonoBehaviour:
   container: {fileID: 0}
   side: 6
   runOnlyOnce: 1
-  relativeOffset: {x: -.100000001, y: .180000007}
+  relativeOffset: {x: -.100000001, y: .150000006}
   pixelOffset: {x: 0, y: 0}
   widgetContainer: {fileID: 0}
 --- !u!1 &19532397
@@ -4886,7 +4886,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2071389129}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 129.230804, y: 310.153839, z: 0}
+  m_LocalPosition: {x: 143.999863, y: 310.153839, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1272088303}
