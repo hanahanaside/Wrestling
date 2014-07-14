@@ -883,6 +883,8 @@
      <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoCameraController.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoReloadController.cs" />
      <Compile Include="Assets\TK2DROOT\tk2d_demo\tk2dDemoRuntimeSpriteController.cs" />
+     <Compile Include="Assets\YouTubeIdKeeper.cs" />
+     <Compile Include="Assets\YouTubeViewController.cs" />
      <Compile Include="Assets\iTweenEditor\Helper Classes\EventParamMappings.cs" />
      <Compile Include="Assets\iTweenEditor\Helper Classes\Vector3OrTransform.cs" />
      <Compile Include="Assets\iTweenEditor\Helper Classes\Vector3OrTransformArray.cs" />
