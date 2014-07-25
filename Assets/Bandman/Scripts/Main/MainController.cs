@@ -1,37 +1,32 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class MainController : MonoBehaviour
-{
+public class MainController : MonoBehaviour {
 	public GameObject chekiDialogPrefab;
 	public GameObject settingDialogPrefab;
 	public GameObject commercialDialogPrefab;
 	public GameObject uiRoot;
 	public GameObject uiFence;
+	public GameObject cpiAdButton;
 	public PlayerController playerController;
-	public bool isDialogShowing{get;set;}
 
-	void Awake ()
-	{
-		GameObject.Find ("NendAdBanner").GetComponent<NendAdBanner> ().Show ();
-		uiFence.SetActive(false);
+	public bool isDialogShowing{ get; set; }
+
+	void Awake () {
+		AdManager.Instance.ShowBannerAd ();
+		uiFence.SetActive (false);
+		if (!OnSaleChecker.CheckOnSale ()) {
+			cpiAdButton.SetActive (false);
+		}
 	}
 	
-	public void OnButtonClick ()
-	{
+	public void OnButtonClick () {
 		string buttonName = UIButton.current.name;
 		Debug.Log (buttonName);
 		//AppC
 		if (buttonName == "GameFeatButton") {
 			#if UNITY_IPHONE
-			if(ReleaseChecker.CheckOnSale()){
 				APUnityPlugin.ShowAppliPromotionWall();
-			}else {
-				string title = "\u6e96\u5099\u4e2d\u3067\u3059";
-				string message = "\u8fd1\u65e5\u516c\u958b!!";
-				string[] buttons = {"OK"};
-				EtceteraBinding.showAlertWithTitleMessageAndButtons(title,message,buttons);
-			}
 #endif
 
 #if UNITY_ANDROID
@@ -70,17 +65,15 @@ public class MainController : MonoBehaviour
 		
 	}
 	
-	public void showDialog (GameObject dialog)
-	{
-		uiFence.SetActive(true);
+	public void showDialog (GameObject dialog) {
+		uiFence.SetActive (true);
 		dialog.transform.parent = uiRoot.transform;
 		dialog.transform.localPosition = new Vector3 (0, 0, 0);
 		dialog.transform.localScale = new Vector3 (1, 1, 1);
 	}
 
-	void OnTap (TapGesture gesture)
-	{
-		if(uiFence.activeSelf){
+	void OnTap (TapGesture gesture) {
+		if (uiFence.activeSelf) {
 			return;
 		}
 		if (gesture.Selection) {
@@ -96,10 +89,9 @@ public class MainController : MonoBehaviour
 		}
 	}
 
-	private void PlayerTapped ()
-	{
+	private void PlayerTapped () {
 		Debug.Log ("player tapped"); 
-		playerController.PlayVoce();
+		playerController.PlayVoce ();
 /*		GameObject[] galArray = GameObject.FindGameObjectsWithTag ("Gal");
 		GameObject[] kyabaArray = GameObject.FindGameObjectsWithTag ("Kyaba");
 		if (galArray.Length < 1 && kyabaArray.Length < 1) {
@@ -108,10 +100,9 @@ public class MainController : MonoBehaviour
 */		
 	}
 	
-	private void GalTapped (TapGesture gesture)
-	{
+	private void GalTapped (TapGesture gesture) {
 		Debug.Log ("gal tapped");
-		playerController.Atack(gesture.Selection.transform);
+		playerController.Atack (gesture.Selection.transform);
 	}
 
 }

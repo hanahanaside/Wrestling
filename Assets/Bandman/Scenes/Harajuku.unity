@@ -1978,6 +1978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   harajukuGalGenerator: {fileID: 457793705}
+  cpiAdButton: {fileID: 2071389129}
 --- !u!114 &772627402
 MonoBehaviour:
   m_ObjectHideFlags: 0

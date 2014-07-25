@@ -251,6 +251,7 @@ MonoBehaviour:
     type: 2}
   uiRoot: {fileID: 1515704293}
   uiFence: {fileID: 1777638876}
+  cpiAdButton: {fileID: 630691636}
   playerController: {fileID: 2030361902}
 --- !u!114 &126734277
 MonoBehaviour:

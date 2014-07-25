@@ -9,6 +9,9 @@ public class RecommendAppChecker : MonoBehaviour
 	// Use this for initialization
 	void Start ()
 	{
+		if(!OnSaleChecker.CheckOnSale()){
+			return;
+		}
 		int recommendCount = PrefsManager.getInstance ().GetRecommendCount ();
 		recommendCount++;
 		PrefsManager.getInstance ().SaveRecommendCount (recommendCount);

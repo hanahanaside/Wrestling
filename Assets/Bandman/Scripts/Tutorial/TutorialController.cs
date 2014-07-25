@@ -1,24 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class TutorialController : MonoBehaviour
-{
+public class TutorialController : MonoBehaviour {
 	public GameObject closeButton;
 	public UISprite tutorialSprite;
 	private int mPageCount = 0;
 
-	void Awake ()
-	{
-		GameObject.Find ("NendAdBanner").GetComponent<NendAdBanner> ().Show ();
+	void Awake () {
+		AdManager.Instance.ShowBannerAd ();
 	}
 
-	void Start ()
-	{
+	void Start () {
 		closeButton.SetActive (false);
 	}
 
-	void OnTap ()
-	{
+	void OnTap () {
 		if (mPageCount < 5) {
 			mPageCount++;
 			tutorialSprite.spriteName = "tutorial_" + mPageCount;
@@ -28,8 +24,7 @@ public class TutorialController : MonoBehaviour
 		}
 	}
 
-	public void OnCloseClick ()
-	{
+	public void OnCloseClick () {
 		PrefsManager.getInstance ().saveTutorialFinished ();
 		Application.LoadLevel ("Main");
 	}
