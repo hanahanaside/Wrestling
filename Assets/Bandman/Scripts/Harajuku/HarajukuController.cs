@@ -56,13 +56,7 @@ public class HarajukuController : MonoBehaviour {
 			OnBackButtonClick ();
 		}
 		if (buttonName == "CPIButton") {
-#if UNITY_IPHONE
-		
-				GameFeatManager.instance.loadGF();
-#endif
-#if UNITY_ANDROID
-			GameFeatManager.instance.loadGF();
-#endif
+			AdManager.Instance.ShowWallAd();
 		}
 		
 	}

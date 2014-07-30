@@ -208,7 +208,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &815294135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -283,7 +283,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &841338988
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,7 +402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1354096464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -728,5 +728,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d0e73e1be8bd4e7d88e47a7ed40960e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nendAdBanner: {fileID: 1354096464}
-  nendAdIcon: {fileID: 815294135}
+  publisherId: 5222
+  account:
+    android:
+      bannerMediaId: 87678
+      bannerSpotId: 186926
+      iconMediaId: 87678
+      iconSpotId: 203185
+      wallMediaId: 87678
+      wallSpotId: 263080
+    iOS:
+      bannerMediaId: 105679
+      bannerSpotId: 240553
+      iconMediaId: 105679
+      iconSpotId: 240554
+      wallMediaId: 105679
+      wallSpotId: 262902

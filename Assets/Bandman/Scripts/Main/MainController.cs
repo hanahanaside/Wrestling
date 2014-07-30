@@ -25,13 +25,7 @@ public class MainController : MonoBehaviour {
 		Debug.Log (buttonName);
 		//AppC
 		if (buttonName == "GameFeatButton") {
-			#if UNITY_IPHONE
-				APUnityPlugin.ShowAppliPromotionWall();
-#endif
-
-#if UNITY_ANDROID
-			GameFeatManager.instance.loadGF();
-#endif
+			AdManager.Instance.ShowWallAd();
 		}
 		
 		//Harajuku
