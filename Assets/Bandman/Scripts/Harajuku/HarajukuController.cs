@@ -11,11 +11,12 @@ public class HarajukuController : MonoBehaviour {
 		Debug.Log ("Start");
 		if (!OnSaleChecker.CheckOnSale ()) {
 			cpiAdButton.SetActive (false);
+		}else {
+			AdManager.Instance.ShowIconAd ();
 		}
 
 #if !UNITY_EDITOR
 		AdManager.Instance.ShowBannerAd ();
-		AdManager.Instance.ShowIconAd ();
 #endif
 	
 	}
