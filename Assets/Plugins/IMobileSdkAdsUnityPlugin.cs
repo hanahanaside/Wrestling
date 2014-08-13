@@ -3,26 +3,37 @@ using System.Collections;
 using System.Runtime.InteropServices;
 
 public class IMobileSdkAdsUnityPlugin : MonoBehaviour {
-
-	// 広告の向き
+	
+	/// <summary>
+	/// 端末の向き
+	/// </summary>
 	public enum ImobileSdkAdsAdOrientation : int {
 		IMOBILESDKADS_AD_ORIENTATION_AUTO,
 		IMOBILESDKADS_AD_ORIENTATION_PORTRAIT,
 		IMOBILESDKADS_AD_ORIENTATION_LANDSCAPE,
 	}
-
+	
+	/// <summary>
+	/// 水平方向の広告表示位置
+	/// </summary>
     public enum AdAlignPosition{
         LEFT,
         CENTER,
         RIGHT
     }
-
+	
+	/// <summary>
+	/// 垂直方向の広告表示位置
+	/// </summary>
     public enum AdValignPosition{
         BOTTOM,
         MIDDLE,
         TOP
     }
 
+	/// <summary>
+	/// 広告の種類
+	/// </summary>
     public enum AdType{
         ICON,
         BANNER,
@@ -66,8 +77,11 @@ public class IMobileSdkAdsUnityPlugin : MonoBehaviour {
 	                                                                         int height,
 	                                                                         int iconNumber,
 	                                                                         int iconViewLayoutWidth,
+	                                                                         int iconSize,
 	                                                                         bool iconTitleEnable,
+	                                                                         int iconTitleFontSize,
 	                                                                         string iconTitleFontColor,
+	                                                                         int iconTitleOffset,
 	                                                                         bool iconTitleShadowEnable,
 	                                                                         string iconTitleShadowColor,
 	                                                                         int iconTitleShadowDx,
@@ -84,6 +98,11 @@ public class IMobileSdkAdsUnityPlugin : MonoBehaviour {
 	#endregion
 
 	#region Unity Pugin Function
+
+	/// <summary>
+	/// 広告表示の状態通知イベントを受け取るオブジェクトを登録します
+	/// </summary>
+	/// <param name="gameObjectName">登録するゲームオブジェクト名</param>
 	public static void addObserver(string gameObjectName){
 		#if UNITY_IPHONE
 		if(Application.platform == RuntimePlatform.IPhonePlayer) {
@@ -95,7 +114,11 @@ public class IMobileSdkAdsUnityPlugin : MonoBehaviour {
 		}
 		#endif
 	}
-
+	
+	/// <summary>
+	/// 広告表示の状態通知イベントを受け取るオブジェクトを解除します
+	/// </summary>
+	/// <param name="gameObjectName">解除するゲームオブジェクト名</param>
 	public static void removeObserver(string gameObjectName){
 		#if UNITY_IPHONE
 		if(Application.platform == RuntimePlatform.IPhonePlayer) {
@@ -108,6 +131,12 @@ public class IMobileSdkAdsUnityPlugin : MonoBehaviour {
 		#endif
 	}
 	
+	/// <summary>
+	/// 全画面広告のスポットを登録します
+	/// </summary>
+	/// <param name="partnerid">パートナーID</param>
+	/// <param name="mediaid">メディアID</param>
+	/// <param name="spotid">スポットID</param>
 	public static void register(string partnerid, string mediaid, string spotid){
 
 		IMobileSpotInfoManager.SetSpotInfo(spotid, partnerid, mediaid);
@@ -126,7 +155,7 @@ public class IMobileSdkAdsUnityPlugin : MonoBehaviour {
 	}
 
     /// <summary>
-    /// フルスクリーン広告のスポットを登録します
+	/// 全画面広告のスポットを登録します
     /// </summary>
     /// <param name="partnerid">Partnerid.</param>
     /// <param name="mediaid">Mediaid.</param>
@@ -144,10 +173,16 @@ public class IMobileSdkAdsUnityPlugin : MonoBehaviour {
     public static void registerInline(string partnerid, string mediaid, string spotid){
         IMobileSpotInfoManager.SetSpotInfo(spotid, partnerid, mediaid);
     }
-
+	
+	/// <summary>
+	/// 登録済みの全ての広告のスポット情報の取得を開始します
+	/// </summary>
 	public static void start(){
 	}
 	
+	/// <summary>
+	/// 登録済みの全ての広告のスポット情報の取得を停止します
+	/// </summary>
 	public static void stop(){
 		#if UNITY_IPHONE
 		if(Application.platform == RuntimePlatform.IPhonePlayer) {
@@ -160,9 +195,17 @@ public class IMobileSdkAdsUnityPlugin : MonoBehaviour {
 		#endif
 	}
 	
+	/// <summary>
+	/// 広告のスポット情報の取得を開始します
+	/// </summary>
+	/// <param name="spotid">スポットID</param>
     public static void start(string spotid){
 	}
 	
+	/// <summary>
+	/// 広告のスポット情報の取得を停止します
+	/// </summary>
+	/// <param name="spotid">スポットID</param>
     public static void stop(string spotid){
 		#if UNITY_IPHONE
 		if(Application.platform == RuntimePlatform.IPhonePlayer) {
@@ -175,6 +218,10 @@ public class IMobileSdkAdsUnityPlugin : MonoBehaviour {
 		#endif
 	}
 	
+	/// <summary>
+	/// 広告を表示します
+	/// </summary>
+	/// <param name="spotid">スポットID</param>
     public static void show(string spotid){
 		#if UNITY_IPHONE
 		if(Application.platform == RuntimePlatform.IPhonePlayer) {
@@ -187,36 +234,78 @@ public class IMobileSdkAdsUnityPlugin : MonoBehaviour {
 		#endif
 	}
 
+	/// <summary>
+	/// 広告を表示します
+	/// </summary>
+	/// <param name="spotid">スポットID</param>
+	/// <param name="adType">AdType</param>
+	/// <param name="alignPosition">AdAlignPosition</param>
+	/// <param name="valignPosition">AdValignPosition</param>
+	public static int show(string spotid, AdType adType, AdAlignPosition alignPosition, AdValignPosition valignPosition) {
+		return show (spotid, adType, alignPosition, valignPosition, null);
+	}
+	
+	/// <summary>
+	/// 広告を表示します
+	/// </summary>
+	/// <param name="spotid">スポットID</param>
+	/// <param name="adType">AdType</param>
+	/// <param name="alignPosition">AdAlignPosition</param>
+	/// <param name="valignPosition">AdValignPosition</param>
+	/// <param name="iconParams">IMobileIconParams</param>
+	public static int show(string spotid, AdType adType, AdAlignPosition alignPosition, AdValignPosition valignPosition, IMobileIconParams iconParams) {
+		Rect adRect = IMobileSdkAdsViewUtility.getAdRect (alignPosition, valignPosition, adType, iconParams);
+		return show (spotid, adType, adRect, iconParams);
+	}
+	
+	/// <summary>
+	/// 広告を表示します
+	/// </summary>
+	/// <param name="spotid">スポットID</param>
+	/// <param name="adType">AdType</param>
+	/// <param name="left">水平方向の広告表示座標</param>
+	/// <param name="top">垂直方向の広告表示座標</param>
     public static int show(string spotid, AdType adType, int left, int top){
         return show(spotid, adType, left, top, null);
 	}
 
+	/// <summary>
+	/// 広告を表示します
+	/// </summary>
+	/// <param name="spotid">スポットID</param>
+	/// <param name="adType">AdType</param>
+	/// <param name="left">水平方向の広告表示座標</param>
+	/// <param name="top">垂直方向の広告表示座標</param>
+	/// <param name="iconParams">IMobileIconParams</param>
     public static int show(string spotid, AdType adType, int left, int top, IMobileIconParams iconParams){
+		Rect adRect = IMobileSdkAdsViewUtility.getAdRect (left, top, adType, iconParams);
+		return show (spotid, adType, adRect, iconParams);
+	}
+				
+	private static int show(string spotid, AdType adType, Rect adRect, IMobileIconParams iconParams){
 
 		iconParams = iconParams ?? new IMobileIconParams();
-
-		#if UNITY_IPHONE  || UNITY_ANDROID
+		
 		string partnerId = IMobileSpotInfoManager.GetPartnerId(spotid);
 		string mediaId = IMobileSpotInfoManager.GetMediaId(spotid);
-		#endif
-
 		int adViewId = IMobileAdViewIdManager.createId();
-
+		
 		#if UNITY_IPHONE
-		int width = IMobileSdkAdsViewUtility.getWidth(adType, iconParams);
-		int height = IMobileSdkAdsViewUtility.getHeight(adType);
 		if(Application.platform == RuntimePlatform.IPhonePlayer) {
 			imobileShowBySpotIDWithPositionAndIconParams_(spotid, 
 			                                              partnerId,
 			                                              mediaId,
-			                                              left,
-			                                              top,
-			                                              width,
-			                                              height,
+			                                              (int)adRect.x,
+			                                              (int)adRect.y,
+			                                              (int)adRect.width,
+			                                              (int)adRect.height,
 			                                              iconParams.iconNumber,
 			                                              iconParams.iconViewLayoutWidth,
+			                                              iconParams.iconSize,
 			                                              iconParams.iconTitleEnable,
+			                                              iconParams.iconTitleFontSize,
 			                                              iconParams.iconTitleFontColor,
+			                                              iconParams.iconTitleOffset,
 			                                              iconParams.iconTitleShadowEnable,
 			                                              iconParams.iconTitleShadowColor,
 			                                              iconParams.iconTitleShadowDx,
@@ -224,34 +313,31 @@ public class IMobileSdkAdsUnityPlugin : MonoBehaviour {
 			                                              adViewId);
 		}
 		#elif UNITY_ANDROID
-        if(Application.platform == RuntimePlatform.Android) {
-            imobileSdkAdsAndroidPlugin.CallStatic("show", partnerId, mediaId, spotid, adViewId, left, top,
-                iconParams.iconNumber, 
-                iconParams.iconViewLayoutWidth,
-                iconParams.iconTitleEnable, 
-                iconParams.iconTitleFontColor, 
-                iconParams.iconTitleShadowEnable,
-                iconParams.iconTitleShadowColor,
-                iconParams.iconTitleShadowDx,
-                iconParams.iconTitleShadowDy
-                );
-        }
+		if(Application.platform == RuntimePlatform.Android) {
+			imobileSdkAdsAndroidPlugin.CallStatic("show", partnerId, mediaId, spotid, adViewId, (int)adRect.x, (int)adRect.y,
+			                                      iconParams.iconNumber, 
+			                                      iconParams.iconViewLayoutWidth,
+												  iconParams.iconSize,
+			                                      iconParams.iconTitleEnable,
+												  iconParams.iconTitleFontSize,
+			                                      iconParams.iconTitleFontColor, 
+												  iconParams.iconTitleOffset,
+			                                      iconParams.iconTitleShadowEnable,
+			                                      iconParams.iconTitleShadowColor,
+			                                      iconParams.iconTitleShadowDx,
+			                                      iconParams.iconTitleShadowDy
+			                                      );
+		}
 		#endif
 		
 		return adViewId;
 	}
-
-    public static int show(string spotid, AdType adType, AdAlignPosition alignPosition, AdValignPosition valignPosition) {
-        return show (spotid, adType, alignPosition, valignPosition, null);
-    }
-
-    public static int show(string spotid, AdType adType, AdAlignPosition alignPosition, AdValignPosition valignPosition, IMobileIconParams iconParams) {
-		int leftPosition = IMobileSdkAdsViewUtility.getLeft(alignPosition, adType, iconParams);
-		int topPosition = IMobileSdkAdsViewUtility.getTop(valignPosition, adType, iconParams);
-
-        return show (spotid, adType, leftPosition, topPosition, iconParams);
-    }
 	
+	/// <summary>
+	/// 広告の表示の向きを設定します
+	/// (iPhoneのみ設定可能)
+	/// </summary>
+	/// <param name="orientation">ImobileSdkAdsAdOrientation</param>
 	public static void setAdOrientation(ImobileSdkAdsAdOrientation orientation){
 		#if UNITY_IPHONE
 		if(Application.platform == RuntimePlatform.IPhonePlayer) {
@@ -261,6 +347,11 @@ public class IMobileSdkAdsUnityPlugin : MonoBehaviour {
 		#endif
 	}
 
+	/// <summary>
+	/// 広告の表示・非表示の切り替えを行います
+	/// </summary>
+	/// <param name="adViewId">showメソッドの戻り値として受け取るAdViewId</param>
+	/// <param name="visible">表示するかどうか</param>
     public static void setVisibility(int adViewId, bool visible){
 		#if UNITY_IPHONE
 		if(Application.platform == RuntimePlatform.IPhonePlayer) {

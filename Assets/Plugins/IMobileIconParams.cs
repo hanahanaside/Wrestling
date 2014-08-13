@@ -6,8 +6,11 @@ public class IMobileIconParams
     {
         iconNumber = 4;
         iconViewLayoutWidth = -1;
+		iconSize = -1;
         iconTitleEnable = true;
-        iconTitleFontColor = "#FFFFFF";      
+		iconTitleFontSize = -1;
+        iconTitleFontColor = "#FFFFFF";
+		iconTitleOffset = -1;
         iconTitleShadowEnable = true;
         iconTitleShadowColor = "#000000";
         iconTitleShadowDx = -1;
@@ -16,8 +19,11 @@ public class IMobileIconParams
 
     public int iconNumber{ get; set; }
     public int iconViewLayoutWidth{ get; set; }
+	public int iconSize{ get; set; }
     public bool iconTitleEnable{ get; set; }
+	public int iconTitleFontSize{ get; set; }
     public string iconTitleFontColor{ get; set; }
+	public int iconTitleOffset{ get; set; }
     public bool iconTitleShadowEnable{ get; set; }
     public string iconTitleShadowColor{ get; set; }
     public int iconTitleShadowDx{ get; set; }

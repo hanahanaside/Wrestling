@@ -33,13 +33,13 @@ public class AdManager : MonoBehaviour {
 #endif
 
 #if UNITY_ANDROID
-		return;
-//			bannerMediaId = account.android.bannerMediaId;
-//			bannerSpotId = account.android.bannerSpotId;
-//			iconMediaId = account.android.iconMediaId;
-//			iconSpotId = account.android.iconSpotId;
-//			wallMediaId = account.android.wallMediaId;
-//			wallSpotId = account.android.wallSpotId;
+
+			bannerMediaId = account.android.bannerMediaId;
+			bannerSpotId = account.android.bannerSpotId;
+			iconMediaId = account.android.iconMediaId;
+			iconSpotId = account.android.iconSpotId;
+			wallMediaId = account.android.wallMediaId;
+			wallSpotId = account.android.wallSpotId;
 #endif
 
 		//prepare banner
@@ -55,7 +55,7 @@ public class AdManager : MonoBehaviour {
 		IMobileIconParams iconParams = new IMobileIconParams ();
 		iconParams.iconNumber = 2;
 		iconParams.iconTitleEnable = false;
-		mIconViewId = IMobileSdkAdsUnityPlugin.show (account.iOS.iconSpotId, IMobileSdkAdsUnityPlugin.AdType.ICON, 0, 10, iconParams);
+		mIconViewId = IMobileSdkAdsUnityPlugin.show (iconSpotId, IMobileSdkAdsUnityPlugin.AdType.ICON, 0, 10, iconParams);
 
 		//prepare wall
 		IMobileSdkAdsUnityPlugin.registerFullScreen (publisherId, wallMediaId, wallSpotId);
@@ -78,7 +78,10 @@ public class AdManager : MonoBehaviour {
 		}
 #endif
 #if UNITY_ANDROID
-		nendAdIcon.Show();
+		if (mIconViewId != -1) {
+			IMobileSdkAdsUnityPlugin.setVisibility (mIconViewId, true);
+		}
+
 #endif
 	}
 
@@ -89,7 +92,10 @@ public class AdManager : MonoBehaviour {
 		}
 #endif
 #if UNITY_ANDROID
-		nendAdBanner.Show();
+		if (mBannerViewId != -1) {
+			IMobileSdkAdsUnityPlugin.setVisibility (mBannerViewId, true);
+		}
+
 #endif
 	}
 
@@ -100,7 +106,10 @@ public class AdManager : MonoBehaviour {
 		}
 #endif
 #if UNITY_ANDROID
-		nendAdIcon.Hide();
+		if (mIconViewId != -1) {
+			IMobileSdkAdsUnityPlugin.setVisibility (mIconViewId, false);
+		}
+
 #endif
 	}
 
@@ -111,7 +120,10 @@ public class AdManager : MonoBehaviour {
 		}
 #endif
 #if UNITY_ANDROID
-		nendAdBanner.Hide();
+		if (mBannerViewId != -1) {
+			IMobileSdkAdsUnityPlugin.setVisibility (mBannerViewId, false);
+		}
+
 #endif
 	}
 
@@ -121,9 +133,8 @@ public class AdManager : MonoBehaviour {
 		wallSpotId = account.iOS.wallSpotId;
 #endif
 #if UNITY_ANDROID
-		gamefeatManager.loadGF();
-		return;
-	//	wallSpotId = account.android.wallSpotId;
+	//	gamefeatManager.loadGF();
+		wallSpotId = account.android.wallSpotId;
 #endif
 		IMobileSdkAdsUnityPlugin.show (wallSpotId);
 

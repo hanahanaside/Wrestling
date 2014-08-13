@@ -9,11 +9,17 @@ public class HarajukuController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Debug.Log ("Start");
+#if UNITY_IPHONE
 		if (!OnSaleChecker.CheckOnSale ()) {
 			cpiAdButton.SetActive (false);
 		}else {
 			AdManager.Instance.ShowIconAd ();
 		}
+#endif
+
+#if UNITY_ANDROID
+		AdManager.Instance.ShowIconAd ();
+#endif
 
 #if !UNITY_EDITOR
 		AdManager.Instance.ShowBannerAd ();

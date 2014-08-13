@@ -15,9 +15,11 @@ public class MainController : MonoBehaviour {
 	void Awake () {
 		AdManager.Instance.ShowBannerAd ();
 		uiFence.SetActive (false);
+		#if UNITY_IPHONE
 		if (!OnSaleChecker.CheckOnSale ()) {
 			cpiAdButton.SetActive (false);
 		}
+		#endif
 	}
 	
 	public void OnButtonClick () {

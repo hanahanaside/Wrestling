@@ -997,12 +997,12 @@
      <Compile Include="Assets\sqlitekit\src\walker_c.cs" />
      <Compile Include="Assets\sqlitekit\src\where_c.cs" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
-     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\NGUI\ReadMe - 3.4.9.txt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Text 2.shader" />
      <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
      <None Include="Assets\TK2DROOT\tk2d\Shaders\LitSolidVertexColor.shader" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo20.txt" />
+     <None Include="Assets\Plugins\Android\res\values\version.xml" />
      <None Include="Assets\NGUI\Examples\Atlases\Wooden\Arimo14.txt" />
      <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\values\attrs.xml" />
      <None Include="Assets\PlayMaker\Readme.txt" />
@@ -1091,6 +1091,7 @@
      <None Include="Assets\TK2DROOT\tk2d_demo\demobmfont\test.fnt" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Transparent Packed 3.shader" />
      <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\layout\com_facebook_picker_title_bar_stub.xml" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
      <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\values-hdpi\dimens.xml" />
      <None Include="Assets\PlayMaker\Resources\PlayMakerAssemblies.txt" />
      <None Include="Assets\Plugins\Android\Facebook-Plugin-Library\res\values-he\strings.xml" />

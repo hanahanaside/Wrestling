@@ -40,12 +40,12 @@ extern UIViewController *UnityGetGLViewController();
     [gameObjectNames removeObject:[NSString stringWithUTF8String:gameObjectName]];
 }
 
-- (void)registerWithPublisherID:(const char*)publisherid MediaID:(const char*)mediaid SoptID:(const char*)soptid {
-    [ImobileSdkAds registerWithPublisherID:[NSString stringWithUTF8String:publisherid]
-                                   MediaID:[NSString stringWithUTF8String:mediaid]
-                                    SpotID:[NSString stringWithUTF8String:soptid]];
+- (void)registerWithPublisherID:(const char*)publisherId MediaID:(const char*)mediaId SoptID:(const char*)soptId {
+    [ImobileSdkAds registerWithPublisherID:[NSString stringWithUTF8String:publisherId]
+                                   MediaID:[NSString stringWithUTF8String:mediaId]
+                                    SpotID:[NSString stringWithUTF8String:soptId]];
     
-    [ImobileSdkAds setSpotDelegate:[NSString stringWithUTF8String:soptid] delegate:self];
+    [ImobileSdkAds setSpotDelegate:[NSString stringWithUTF8String:soptId] delegate:self];
 }
 
 - (void)start {
@@ -56,43 +56,46 @@ extern UIViewController *UnityGetGLViewController();
     [ImobileSdkAds stop];
 }
 
-- (bool)startBySpotID:(const char*)spotid {
-    return [ImobileSdkAds startBySpotID:[NSString stringWithUTF8String:spotid]];
+- (bool)startBySpotID:(const char*)spotId {
+    return [ImobileSdkAds startBySpotID:[NSString stringWithUTF8String:spotId]];
 }
 
-- (bool)stopBySpotID:(const char*)spotid {
-    return [ImobileSdkAds stopBySpotID:[NSString stringWithUTF8String:spotid]];
+- (bool)stopBySpotID:(const char*)spotId {
+    return [ImobileSdkAds stopBySpotID:[NSString stringWithUTF8String:spotId]];
 }
 
-- (bool)showBySpotID:(const char*)spotid {
-    return [ImobileSdkAds showBySpotID:[NSString stringWithUTF8String:spotid]];
+- (bool)showBySpotID:(const char*)spotId {
+    return [ImobileSdkAds showBySpotID:[NSString stringWithUTF8String:spotId]];
 }
 
-- (bool)showBySpotID:(const char*)spotid PublisherID:(const char*)publisherid MediaID:(const char*)mediaid Left:(int)left Top:(int)top Width:(int)width Height:(int)height iconNumber:(int)iconNumber iconViewLayoutWidth:(int)iconViewLayoutWidth iconTitleEnable:(bool)iconTitleEnable iconTitleFontColor:(const char*)iconTitleFontColor iconTitleShadowEnable:(bool)iconTitleShadowEnable iconTitleShadowColor:(const char*)iconTitleShadowColor iconTitleShadowDx:(int)iconTitleShadowDx iconTitleShadowDy:(int)iconTitleShadowDy adViewId:(int)adViewId {
+- (bool)showBySpotID:(const char*)spotId PublisherID:(const char*)publisherId MediaID:(const char*)mediaId Left:(int)left Top:(int)top Width:(int)width Height:(int)height iconNumber:(int)iconNumber iconViewLayoutWidth:(int)iconViewLayoutWidth iconSize:(int)iconSize iconTitleEnable:(bool)iconTitleEnable iconTitleFontSize:(int)iconTitleFontSize iconTitleFontColor:(const char*)iconTitleFontColor iconTitleOffset:(int)iconTitleOffset iconTitleShadowEnable:(bool)iconTitleShadowEnable iconTitleShadowColor:(const char*)iconTitleShadowColor iconTitleShadowDx:(int)iconTitleShadowDx iconTitleShadowDy:(int)iconTitleShadowDy adViewId:(int)adViewId {
     
     // create iconParams
     ImobileSdkAdsIconParams *params = [[ImobileSdkAdsIconParams alloc] init];
     params.iconNumber = iconNumber;
     params.iconViewLayoutWidth = iconViewLayoutWidth;
+    params.iconSize = iconSize;
     params.iconTitleEnable = iconTitleEnable;
+    params.iconTitleFontSize = iconTitleFontSize;
     params.iconTitleFontColor = [NSString stringWithUTF8String:iconTitleFontColor];
+    params.iconTitleOffset = iconTitleOffset;
     params.iconTitleShadowEnable = iconTitleShadowEnable;
     params.iconTitleShadowColor = [NSString stringWithUTF8String:iconTitleShadowColor];
     params.iconTitleShadowDx = iconTitleShadowDx;
     params.iconTitleShadowDy = iconTitleShadowDy;
     
     // resister
-    [self registerWithPublisherID:publisherid MediaID:mediaid SoptID:spotid];
+    [self registerWithPublisherID:publisherId MediaID:mediaId SoptID:spotId];
     
     // start
-    [self startBySpotID:spotid];
+    [self startBySpotID:spotId];
     
     // show
     UIView *adContainerView = [[UIView alloc] initWithFrame:CGRectMake(left, top, width, height)];
     [adViewIdDictionary setObject:adContainerView forKey:[NSString stringWithFormat:@"%d", adViewId]];
     [UnityGetGLViewController().view addSubview:adContainerView];
     
-    return [ImobileSdkAds showBySpotID:[NSString stringWithUTF8String:spotid] View:adContainerView IconPrams:params];
+    return [ImobileSdkAds showBySpotID:[NSString stringWithUTF8String:spotId] View:adContainerView IconPrams:params];
 }
 
 - (void)setAdOrientation:(ImobileSdkAdsAdOrientation)orientation {
@@ -112,8 +115,8 @@ extern UIViewController *UnityGetGLViewController();
 #pragma mark Call from ImobileSdkAds
 // ----------------------------------------
 
-- (void)imobileSdkAdsSpot:(NSString *)spotid didReadyWithValue:(ImobileSdkAdsReadyResult)value {
-    NSString *msg = [NSString stringWithFormat:@"%@", spotid];
+- (void)imobileSdkAdsSpot:(NSString *)spotId didReadyWithValue:(ImobileSdkAdsReadyResult)value {
+    NSString *msg = [NSString stringWithFormat:@"%@", spotId];
     
     for (NSString *gameObjectName in gameObjectNames ) {
         UnitySendMessage([gameObjectName UTF8String],
@@ -122,8 +125,8 @@ extern UIViewController *UnityGetGLViewController();
     }
 }
 
-- (void)imobileSdkAdsSpot:(NSString *)spotid didFailWithValue:(ImobileSdkAdsFailResult)value {
-    NSString *msg = [NSString stringWithFormat:@"%@,%d", spotid,value];
+- (void)imobileSdkAdsSpot:(NSString *)spotId didFailWithValue:(ImobileSdkAdsFailResult)value {
+    NSString *msg = [NSString stringWithFormat:@"%@,%d", spotId,value];
     
     for (NSString *gameObjectName in gameObjectNames ) {
         UnitySendMessage([gameObjectName UTF8String],
@@ -132,8 +135,8 @@ extern UIViewController *UnityGetGLViewController();
     }
 }
 
-- (void)imobileSdkAdsSpotIsNotReady:(NSString *)spotid {
-    NSString *msg = [NSString stringWithFormat:@"%@", spotid];
+- (void)imobileSdkAdsSpotIsNotReady:(NSString *)spotId {
+    NSString *msg = [NSString stringWithFormat:@"%@", spotId];
     
     for (NSString *gameObjectName in gameObjectNames ) {
         UnitySendMessage([gameObjectName UTF8String],
@@ -142,8 +145,8 @@ extern UIViewController *UnityGetGLViewController();
     }
 }
 
-- (void)imobileSdkAdsSpotDidClick:(NSString *)spotid {
-    NSString *msg = [NSString stringWithFormat:@"%@", spotid];
+- (void)imobileSdkAdsSpotDidClick:(NSString *)spotId {
+    NSString *msg = [NSString stringWithFormat:@"%@", spotId];
     
     for (NSString *gameObjectName in gameObjectNames ) {
         UnitySendMessage([gameObjectName UTF8String],
@@ -152,8 +155,8 @@ extern UIViewController *UnityGetGLViewController();
     }
 }
 
-- (void)imobileSdkAdsSpotDidClose:(NSString *)spotid {
-    NSString *msg = [NSString stringWithFormat:@"%@", spotid];
+- (void)imobileSdkAdsSpotDidClose:(NSString *)spotId {
+    NSString *msg = [NSString stringWithFormat:@"%@", spotId];
     
     for (NSString *gameObjectName in gameObjectNames ) {
         UnitySendMessage([gameObjectName UTF8String],
@@ -186,13 +189,13 @@ extern "C" {
         [unityPlugin removeObserver:gameObjectName];
     }
     
-    void imobileRegisterWithPublisherID_(const char* publisherid, const char* mediaid, const char* soptid) {
+    void imobileRegisterWithPublisherID_(const char* publisherId, const char* mediaId, const char* soptId) {
         if (!unityPlugin) {
             unityPlugin = [[ImobileSdkAdsIosUnityPluginImpl alloc] init];
         }
-        [unityPlugin registerWithPublisherID:publisherid
-                                     MediaID:mediaid
-                                      SoptID:soptid];
+        [unityPlugin registerWithPublisherID:publisherId
+                                     MediaID:mediaId
+                                      SoptID:soptId];
     }
     
     void imobileStart_() {
@@ -209,38 +212,41 @@ extern "C" {
         [unityPlugin stop];
     }
     
-    bool imobileStartBySpotID_(const char* spotid){
+    bool imobileStartBySpotID_(const char* spotId){
         if (!unityPlugin) {
             unityPlugin = [[ImobileSdkAdsIosUnityPluginImpl alloc] init];
         }
-        return [unityPlugin startBySpotID:spotid];
+        return [unityPlugin startBySpotID:spotId];
     }
     
-    bool imobileStopBySpotID_(const char* spotid) {
+    bool imobileStopBySpotID_(const char* spotId) {
         if (!unityPlugin) {
             unityPlugin = [[ImobileSdkAdsIosUnityPluginImpl alloc] init];
         }
-        return [unityPlugin stopBySpotID:spotid];
+        return [unityPlugin stopBySpotID:spotId];
     }
     
-    bool imobileShowBySpotID_(const char* spotid, int adViewId) {
+    bool imobileShowBySpotID_(const char* spotId, int adViewId) {
         if (!unityPlugin) {
             unityPlugin = [[ImobileSdkAdsIosUnityPluginImpl alloc] init];
         }
-        return [unityPlugin showBySpotID:spotid];
+        return [unityPlugin showBySpotID:spotId];
     }
     
-    bool imobileShowBySpotIDWithPositionAndIconParams_(const char* spotid,
-                                                       const char* publisherid,
-                                                       const char* mediaid,
+    bool imobileShowBySpotIDWithPositionAndIconParams_(const char* spotId,
+                                                       const char* publisherId,
+                                                       const char* mediaId,
                                                        int left,
                                                        int top,
                                                        int width,
                                                        int height,
                                                        int iconNumber,
                                                        int iconViewLayoutWidth,
+                                                       int iconSize,
                                                        bool iconTitleEnable,
+                                                       int iconTitleFontSize,
                                                        const char* iconTitleFontColor,
+                                                       int iconTitleOffset,
                                                        bool iconTitleShadowEnable,
                                                        const char* iconTitleShadowColor,
                                                        int iconTitleShadowDx,
@@ -249,17 +255,20 @@ extern "C" {
         if (!unityPlugin) {
             unityPlugin = [[ImobileSdkAdsIosUnityPluginImpl alloc] init];
         }
-        return [unityPlugin showBySpotID:spotid
-                             PublisherID:publisherid
-                                 MediaID:mediaid
+        return [unityPlugin showBySpotID:spotId
+                             PublisherID:publisherId
+                                 MediaID:mediaId
                                     Left:left
                                      Top:top
                                    Width:width
                                   Height:height
                               iconNumber:iconNumber
                      iconViewLayoutWidth:iconViewLayoutWidth
+                                iconSize:iconSize
                          iconTitleEnable:iconTitleEnable
+                       iconTitleFontSize:iconTitleFontSize
                       iconTitleFontColor:iconTitleFontColor
+                         iconTitleOffset:iconTitleOffset
                    iconTitleShadowEnable:iconTitleShadowEnable
                     iconTitleShadowColor:iconTitleShadowColor
                        iconTitleShadowDx:iconTitleShadowDx
