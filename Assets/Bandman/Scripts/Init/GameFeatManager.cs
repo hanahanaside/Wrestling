@@ -33,6 +33,7 @@ public class GameFeatManager : MonoBehaviour
 	
 	#if UNITY_ANDROID
 	private void initAndroid(){
+		DontDestroyOnLoad(gameObject);
 		AndroidJavaClass unityPlayer = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
 		AndroidJavaObject activity = unityPlayer.GetStatic<AndroidJavaObject> ("currentActivity");
 		AndroidJavaClass plugin = new AndroidJavaClass ("jp.basicinc.gamefeat.android.unity.GameFeatUnityPlugin");

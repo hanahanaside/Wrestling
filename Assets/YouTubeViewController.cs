@@ -14,8 +14,10 @@ public class YouTubeViewController : MonoBehaviour {
 	public void OnCloseClick(){
 		GameObject.Find("UIFence").SetActive(false);
 		mBgm.audio.Play();
+		#if UNITY_IPHONE
 		EtceteraBinding.inlineWebViewClose();
 		Destroy(gameObject.transform.parent.gameObject);
+		#endif
 	}
 	
 	void Show(int evolutionPoint){

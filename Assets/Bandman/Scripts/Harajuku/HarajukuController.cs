@@ -9,13 +9,20 @@ public class HarajukuController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Debug.Log ("Start");
+#if UNITY_IPHONE
 		if (!OnSaleChecker.CheckOnSale ()) {
 			cpiAdButton.SetActive (false);
+		}else {
+			AdManager.Instance.ShowIconAd ();
 		}
+#endif
+
+#if UNITY_ANDROID
+		AdManager.Instance.ShowIconAd ();
+#endif
 
 #if !UNITY_EDITOR
 		AdManager.Instance.ShowBannerAd ();
-		AdManager.Instance.ShowIconAd ();
 #endif
 	
 	}
@@ -56,13 +63,7 @@ public class HarajukuController : MonoBehaviour {
 			OnBackButtonClick ();
 		}
 		if (buttonName == "CPIButton") {
-#if UNITY_IPHONE
-		
-				GameFeatManager.instance.loadGF();
-#endif
-#if UNITY_ANDROID
-			GameFeatManager.instance.loadGF();
-#endif
+			AdManager.Instance.ShowWallAd();
 		}
 		
 	}
